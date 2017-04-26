@@ -176,12 +176,12 @@ public class TelaLogin extends javax.swing.JFrame {
         if (resposta == JOptionPane.YES_OPTION){
             dispose();
         }else{
-            JOptionPane.showMessageDialog(null, "OK.");
+            JOptionPane.showMessageDialog(null, "OK. O programa não será fechado.");
         }        
     }//GEN-LAST:event_FecharMouseClicked
 
     private void BotaoCadastreSeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastreSeActionPerformed
-        TelaCadastrar cadastrese = new TelaCadastrar();
+        CadastroAssunto cadastrese = new CadastroAssunto();
         cadastrese.setVisible(true);
         dispose();
     }//GEN-LAST:event_BotaoCadastreSeActionPerformed

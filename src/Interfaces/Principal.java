@@ -5,6 +5,8 @@
  */
 package Interfaces;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author XPerience
@@ -84,7 +86,13 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void FecharMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FecharMouseClicked
-        dispose();
+        int resposta;
+        resposta = JOptionPane.showConfirmDialog(null, "Você realmente deseja fechar o programa?");
+        if (resposta == JOptionPane.YES_OPTION){
+            dispose();
+        }else{
+            JOptionPane.showMessageDialog(null, "OK. O programa não será fechado.");
+        }
     }//GEN-LAST:event_FecharMouseClicked
 
     /**
