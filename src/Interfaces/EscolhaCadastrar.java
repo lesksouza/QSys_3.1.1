@@ -33,12 +33,12 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        CaixadeCombinacao = new javax.swing.JComboBox();
-        Cadastrar = new javax.swing.JButton();
+        caixaDeCombinacao = new javax.swing.JComboBox();
+        botaoCadastrar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        Cancelar = new javax.swing.JButton();
+        botaoCancelar = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         Fechar = new javax.swing.JMenu();
@@ -50,14 +50,14 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("O que deseja cadastrar?");
 
-        CaixadeCombinacao.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhum", "Assunto", "Disciplina", "Questão", "Prova", "Professor", "Administrador" }));
-        CaixadeCombinacao.addActionListener(new java.awt.event.ActionListener() {
+        caixaDeCombinacao.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhum", "Assunto", "Disciplina", "Questão", "Prova", "Professor", "Administrador" }));
+        caixaDeCombinacao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CaixadeCombinacaoActionPerformed(evt);
+                caixaDeCombinacaoActionPerformed(evt);
             }
         });
 
-        Cadastrar.setText("Cadastrar");
+        botaoCadastrar.setText("Cadastrar");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Cadastrar.png"))); // NOI18N
 
@@ -65,7 +65,7 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
 
         jLabel4.setText("As opções variam, desde assunto a administrador.");
 
-        Cancelar.setText("Cancelar");
+        botaoCancelar.setText("Cancelar");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -87,11 +87,11 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
                         .addComponent(jLabel4)
                         .addGap(75, 75, 75))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(CaixadeCombinacao, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(caixaDeCombinacao, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Cadastrar)
+                        .addComponent(botaoCadastrar)
                         .addGap(2, 2, 2)
-                        .addComponent(Cancelar)
+                        .addComponent(botaoCancelar)
                         .addContainerGap())))
         );
         jPanel2Layout.setVerticalGroup(
@@ -107,9 +107,9 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CaixadeCombinacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cadastrar)
-                    .addComponent(Cancelar))
+                    .addComponent(caixaDeCombinacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoCadastrar)
+                    .addComponent(botaoCancelar))
                 .addGap(33, 33, 33))
         );
 
@@ -163,9 +163,9 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CaixadeCombinacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaixadeCombinacaoActionPerformed
+    private void caixaDeCombinacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaDeCombinacaoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CaixadeCombinacaoActionPerformed
+    }//GEN-LAST:event_caixaDeCombinacaoActionPerformed
 
     private void jMenuBar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuBar1MouseClicked
         // TODO add your handling code here:
@@ -217,10 +217,10 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Cadastrar;
-    private javax.swing.JComboBox CaixadeCombinacao;
-    private javax.swing.JButton Cancelar;
     private javax.swing.JMenu Fechar;
+    private javax.swing.JButton botaoCadastrar;
+    private javax.swing.JButton botaoCancelar;
+    private javax.swing.JComboBox caixaDeCombinacao;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

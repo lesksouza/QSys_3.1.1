@@ -109,11 +109,11 @@
                               <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="CaixadeCombinacao" min="-2" pref="206" max="-2" attributes="0"/>
+                              <Component id="caixaDeCombinacao" min="-2" pref="206" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Cadastrar" min="-2" max="-2" attributes="0"/>
+                              <Component id="botaoCadastrar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                              <Component id="Cancelar" min="-2" max="-2" attributes="0"/>
+                              <Component id="botaoCancelar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -133,9 +133,9 @@
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="CaixadeCombinacao" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Cadastrar" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="caixaDeCombinacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="botaoCadastrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="botaoCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   </Group>
@@ -151,7 +151,7 @@
                 <Property name="text" type="java.lang.String" value="O que deseja cadastrar?"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="CaixadeCombinacao">
+            <Component class="javax.swing.JComboBox" name="caixaDeCombinacao">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="7">
@@ -166,10 +166,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CaixadeCombinacaoActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caixaDeCombinacaoActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="Cadastrar">
+            <Component class="javax.swing.JButton" name="botaoCadastrar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Cadastrar"/>
               </Properties>
@@ -191,7 +191,7 @@
                 <Property name="text" type="java.lang.String" value="As op&#xe7;&#xf5;es variam, desde assunto a administrador."/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="Cancelar">
+            <Component class="javax.swing.JButton" name="botaoCancelar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Cancelar"/>
               </Properties>
