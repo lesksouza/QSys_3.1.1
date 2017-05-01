@@ -66,6 +66,11 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
         jLabel4.setText("As opções variam, desde assunto a administrador.");
 
         botaoCancelar.setText("Cancelar");
+        botaoCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -180,6 +185,10 @@ public class EscolhaCadastrar extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "OK. O programa não será fechado.");
         }
     }//GEN-LAST:event_FecharMouseClicked
+
+    private void botaoCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoCancelarActionPerformed
 
     /**
      * @param args the command line arguments

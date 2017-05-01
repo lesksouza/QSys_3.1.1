@@ -5,6 +5,7 @@
  */
 package Interfaces;
 
+import Visao.Cadastrar.CadastroAssunto;
 import javax.swing.JOptionPane;
 
 /**
@@ -198,7 +199,7 @@ public class TelaLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Preencha os campos com dados para Usuário e Senha.");
         }
         else if(campoUsuario.getText().equals("adm1n")||campoSenha.getText().equals("adm1n")){
-            Principal cadastrese = new Principal();
+            TelaPrincipal cadastrese = new TelaPrincipal();
             cadastrese.setVisible(true);
             dispose();
         }
