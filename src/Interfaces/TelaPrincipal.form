@@ -35,9 +35,6 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+P"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagens/prof_cad.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Professor"/>
               </Properties>
               <Events>
@@ -91,9 +88,6 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+Alt+P"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagens/prof_con.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Professor"/>
               </Properties>
             </MenuItem>
@@ -143,9 +137,6 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+Ctrl+P"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagens/prof_alt.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Professor"/>
               </Properties>
@@ -200,9 +191,6 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Alt+P"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagens/prof_exc.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Professor"/>
               </Properties>
             </MenuItem>
@@ -255,9 +243,6 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+G"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagens/prova_gerar.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Prova"/>
               </Properties>

@@ -87,7 +87,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu3.setText("Cadastrar");
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/prof_cad.png"))); // NOI18N
         jMenuItem1.setText("Professor");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +117,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu5.setText("Consultar");
 
         jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/prof_con.png"))); // NOI18N
         jMenuItem6.setText("Professor");
         jMenu5.add(jMenuItem6);
 
@@ -144,7 +142,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu4.setText("Alterar");
 
         jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/prof_alt.png"))); // NOI18N
         jMenuItem11.setText("Professor");
         jMenu4.add(jMenuItem11);
 
@@ -175,7 +172,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu6.setText("Excluir");
 
         jMenuItem16.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/prof_exc.png"))); // NOI18N
         jMenuItem16.setText("Professor");
         jMenu6.add(jMenuItem16);
 
@@ -206,7 +202,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu7.setText("Gerar");
 
         jMenuItem21.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/prova_gerar.png"))); // NOI18N
         jMenuItem21.setText("Prova");
         jMenu7.add(jMenuItem21);
 
