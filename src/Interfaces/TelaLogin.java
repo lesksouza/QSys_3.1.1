@@ -6,6 +6,7 @@
 package Interfaces;
 
 import Visao.Cadastrar.CadastroAssunto;
+import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -188,7 +189,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_FecharMouseClicked
 
     private void botaoCadastreSeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastreSeActionPerformed
-        CadastroAssunto cadastrese = new CadastroAssunto();
+        CadastroProfessor cadastrese = new CadastroProfessor();
         cadastrese.setVisible(true);
         dispose();
     }//GEN-LAST:event_botaoCadastreSeActionPerformed
