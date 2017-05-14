@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
  *
  * @author XPerience
  */
-public class TelaPrincipal extends javax.swing.JFrame {
+public class Sobre extends javax.swing.JFrame {
 
     /**
      * Creates new form Principal
      */
-    public TelaPrincipal() {
+    public Sobre() {
         initComponents();
     }
 
@@ -35,9 +35,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
         Titulo = new javax.swing.JLabel();
-        Subtitulo = new javax.swing.JLabel();
-        letrinhasMiudas = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        Texto1 = new javax.swing.JLabel();
+        Texto2 = new javax.swing.JLabel();
+        Texto3 = new javax.swing.JLabel();
+        Texto4 = new javax.swing.JLabel();
+        Texto5 = new javax.swing.JLabel();
+        Texto6 = new javax.swing.JLabel();
+        botaoVoltar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         cadastrarProfessor = new javax.swing.JMenuItem();
@@ -75,7 +80,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Tela Principal");
+        setTitle("Sobre o QSys");
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(460, 339));
@@ -85,23 +90,57 @@ public class TelaPrincipal extends javax.swing.JFrame {
         Titulo.setForeground(new java.awt.Color(255, 255, 255));
         Titulo.setText("QSys");
         jPanel1.add(Titulo);
-        Titulo.setBounds(30, 20, 110, 60);
+        Titulo.setBounds(20, 90, 110, 50);
 
-        Subtitulo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Subtitulo.setForeground(new java.awt.Color(255, 255, 255));
-        Subtitulo.setText("bem-vindo ao banco de questões e geração de provas");
-        jPanel1.add(Subtitulo);
-        Subtitulo.setBounds(30, 80, 380, 17);
+        Texto1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Texto1.setForeground(new java.awt.Color(255, 255, 255));
+        Texto1.setText("Esse é o sistema QSys, desenvolvido para ser capaz de manter professores, disciplinas, assuntos e questões em um banco de dados.");
+        jPanel1.add(Texto1);
+        Texto1.setBounds(20, 140, 820, 17);
 
-        letrinhasMiudas.setFont(new java.awt.Font("Tahoma", 2, 10)); // NOI18N
-        letrinhasMiudas.setForeground(new java.awt.Color(255, 255, 255));
-        letrinhasMiudas.setText("Desenvolvido nas aulas de Cláudio Matias.");
-        jPanel1.add(letrinhasMiudas);
-        letrinhasMiudas.setBounds(650, 430, 190, 14);
+        Texto2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Texto2.setForeground(new java.awt.Color(255, 255, 255));
+        Texto2.setText("O QSys também foi desenvolvido para gerar provas já cadastradas que podem ser impressas na extensão .pdf. O desenvolvimento");
+        jPanel1.add(Texto2);
+        Texto2.setBounds(20, 160, 820, 20);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/telaPrincipalFundo.jpg"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(4, 0, 850, 460);
+        Texto3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Texto3.setForeground(new java.awt.Color(255, 255, 255));
+        Texto3.setText("de um sistema feito em java foi proposto pelo professor da escola EEEP Antônio Rodrigues de Oliveira, Claudiano \"Cláudio\" Matias, na");
+        jPanel1.add(Texto3);
+        Texto3.setBounds(20, 180, 810, 20);
+
+        Texto4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Texto4.setForeground(new java.awt.Color(255, 255, 255));
+        Texto4.setText("disciplina Laboratório de Software, para o primeiro semestre de 2017 na turma de 3º ano Informática, tendo como membro gerente ");
+        jPanel1.add(Texto4);
+        Texto4.setBounds(20, 200, 830, 20);
+
+        Texto5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Texto5.setForeground(new java.awt.Color(255, 255, 255));
+        Texto5.setText("Alexsandro Souza (nº 01) e equipe, Antonio \"Tonhão\" Mateus (nº 06), Edemara Rodrigues (nº ?) e Naiara Moreira (nº 30). O trabalho");
+        jPanel1.add(Texto5);
+        Texto5.setBounds(20, 220, 820, 20);
+
+        Texto6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Texto6.setForeground(new java.awt.Color(255, 255, 255));
+        Texto6.setText("produzido em quatro meses - de Fevereiro a Junho. Um projeto obviamente árduo, porém indiscutivelmente divertido.");
+        jPanel1.add(Texto6);
+        Texto6.setBounds(20, 240, 750, 20);
+
+        botaoVoltar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoVoltar.setText("Voltar");
+        botaoVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoVoltarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(botaoVoltar);
+        botaoVoltar.setBounds(400, 413, 80, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sobreFundo.jpg"))); // NOI18N
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(0, -6, 860, 470);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cad.png"))); // NOI18N
         jMenu3.setText("Cadastrar");
@@ -263,9 +302,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void SobreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SobreMouseClicked
-        Sobre sobre = new Sobre();
-        sobre.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_SobreMouseClicked
 
     private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
@@ -287,11 +324,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
         resposta = JOptionPane.showConfirmDialog(null, "Você realmente deseja fechar o programa?");
         if (resposta == JOptionPane.YES_OPTION){
             dispose();
-        }
-        if (resposta == JOptionPane.NO_OPTION){
+        }else{
             JOptionPane.showMessageDialog(null, "OK. O programa não será fechado.");
         }
     }//GEN-LAST:event_SairMouseClicked
+
+    private void botaoVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoVoltarActionPerformed
+        TelaPrincipal tela = new TelaPrincipal();
+        tela.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botaoVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,21 +352,23 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sobre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sobre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sobre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Sobre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaPrincipal().setVisible(true);
+                new Sobre().setVisible(true);
             }
         });
     }
@@ -334,14 +378,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu Gerar;
     private javax.swing.JMenu Sair;
     private javax.swing.JMenu Sobre;
-    private javax.swing.JLabel Subtitulo;
+    private javax.swing.JLabel Texto1;
+    private javax.swing.JLabel Texto2;
+    private javax.swing.JLabel Texto3;
+    private javax.swing.JLabel Texto4;
+    private javax.swing.JLabel Texto5;
+    private javax.swing.JLabel Texto6;
     private javax.swing.JLabel Titulo;
+    private javax.swing.JButton botaoVoltar;
     private javax.swing.JMenuItem cadastrarAssunto;
     private javax.swing.JMenuItem cadastrarDisciplina;
     private javax.swing.JMenuItem cadastrarProfessor;
     private javax.swing.JMenuItem cadastrarProva;
     private javax.swing.JMenuItem cadastrarQuestao;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -366,6 +416,5 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel letrinhasMiudas;
     // End of variables declaration//GEN-END:variables
 }
