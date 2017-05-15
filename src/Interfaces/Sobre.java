@@ -90,7 +90,7 @@ public class Sobre extends javax.swing.JFrame {
         Titulo.setForeground(new java.awt.Color(255, 255, 255));
         Titulo.setText("QSys");
         jPanel1.add(Titulo);
-        Titulo.setBounds(20, 90, 110, 50);
+        Titulo.setBounds(20, 90, 120, 50);
 
         Texto1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Texto1.setForeground(new java.awt.Color(255, 255, 255));

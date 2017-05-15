@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
  *
  * @author XPerience
  */
-public class TelaPrincipal extends javax.swing.JFrame {
+public class Professor extends javax.swing.JFrame {
 
     /**
      * Creates new form Principal
      */
-    public TelaPrincipal() {
+    public Professor() {
         initComponents();
     }
 
@@ -34,10 +34,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
-        Titulo = new javax.swing.JLabel();
-        Subtitulo = new javax.swing.JLabel();
-        letrinhasMiudas = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         cadastrarProfessor = new javax.swing.JMenuItem();
@@ -80,28 +76,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(460, 339));
         jPanel1.setLayout(null);
-
-        Titulo.setFont(new java.awt.Font("Stencil FourReversed", 0, 48)); // NOI18N
-        Titulo.setForeground(new java.awt.Color(255, 255, 255));
-        Titulo.setText("QSys");
-        jPanel1.add(Titulo);
-        Titulo.setBounds(30, 20, 120, 60);
-
-        Subtitulo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Subtitulo.setForeground(new java.awt.Color(255, 255, 255));
-        Subtitulo.setText("bem-vindo ao banco de questões e geração de provas");
-        jPanel1.add(Subtitulo);
-        Subtitulo.setBounds(30, 80, 380, 17);
-
-        letrinhasMiudas.setFont(new java.awt.Font("Tahoma", 2, 10)); // NOI18N
-        letrinhasMiudas.setForeground(new java.awt.Color(255, 255, 255));
-        letrinhasMiudas.setText("Desenvolvido nas aulas de Cláudio Matias.");
-        jPanel1.add(letrinhasMiudas);
-        letrinhasMiudas.setBounds(650, 430, 190, 14);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/telaPrincipalFundo.jpg"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(4, 0, 850, 460);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cad.png"))); // NOI18N
         jMenu3.setText("Cadastrar");
@@ -310,21 +284,23 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Professor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Professor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Professor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Professor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaPrincipal().setVisible(true);
+                new Professor().setVisible(true);
             }
         });
     }
@@ -334,14 +310,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu Gerar;
     private javax.swing.JMenu Sair;
     private javax.swing.JMenu Sobre;
-    private javax.swing.JLabel Subtitulo;
-    private javax.swing.JLabel Titulo;
     private javax.swing.JMenuItem cadastrarAssunto;
     private javax.swing.JMenuItem cadastrarDisciplina;
     private javax.swing.JMenuItem cadastrarProfessor;
     private javax.swing.JMenuItem cadastrarProva;
     private javax.swing.JMenuItem cadastrarQuestao;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -366,6 +339,5 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel letrinhasMiudas;
     // End of variables declaration//GEN-END:variables
 }

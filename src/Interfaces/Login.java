@@ -96,7 +96,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoSairActionPerformed
 
     private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
-        if(campoUsuario.getText().equals("adm1n")&&campoSenha.getText().equals("s3nh4")){
+        if(campoUsuario.getText().equals("admin")&&campoSenha.getText().equals("admin")){
             TelaPrincipal tela = new TelaPrincipal();
             tela.setVisible(true);
             dispose();
