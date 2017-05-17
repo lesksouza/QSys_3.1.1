@@ -32,6 +32,11 @@
             <Property name="text" type="java.lang.String" value="Assunto"/>
           </Properties>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Disciplina"/>
+          </Properties>
+        </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu9">
           <Properties>
             <Property name="text" type="java.lang.String" value="Quest&#xe3;o"/>
@@ -56,11 +61,6 @@
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Sair"/>
-          </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu8">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Disciplina"/>
           </Properties>
         </Menu>
       </SubComponents>

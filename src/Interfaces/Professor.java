@@ -34,33 +34,35 @@ public class Professor extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        CodigoDoProfessor = new javax.swing.JLabel();
+        campoCodigoProfessor = new javax.swing.JTextField();
+        botaoProcurar = new javax.swing.JButton();
+        campoNome = new javax.swing.JTextField();
+        Nome = new javax.swing.JLabel();
+        Login = new javax.swing.JLabel();
+        campoLogin = new javax.swing.JTextField();
+        campoSenha = new javax.swing.JPasswordField();
+        Senha = new javax.swing.JLabel();
+        Contato = new javax.swing.JLabel();
+        caixaDisciplina1 = new javax.swing.JComboBox();
+        caixaDisciplina2 = new javax.swing.JComboBox();
+        botaoLimpar = new javax.swing.JButton();
+        botaoCancelar = new javax.swing.JButton();
+        botaoExcluir = new javax.swing.JButton();
+        botaoConsultar = new javax.swing.JButton();
+        botaoCadastrar = new javax.swing.JButton();
+        botaoAtualizar = new javax.swing.JButton();
+        Sexo = new javax.swing.JLabel();
+        caixaSexo = new javax.swing.JComboBox();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        cadastrarProfessor = new javax.swing.JMenuItem();
-        cadastrarDisciplina = new javax.swing.JMenuItem();
-        cadastrarAssunto = new javax.swing.JMenuItem();
-        cadastrarQuestao = new javax.swing.JMenuItem();
-        cadastrarProva = new javax.swing.JMenuItem();
-        jMenu5 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem11 = new javax.swing.JMenuItem();
-        jMenuItem12 = new javax.swing.JMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem14 = new javax.swing.JMenuItem();
-        jMenuItem15 = new javax.swing.JMenuItem();
-        Excluir = new javax.swing.JMenu();
-        jMenuItem16 = new javax.swing.JMenuItem();
-        jMenuItem17 = new javax.swing.JMenuItem();
-        jMenuItem18 = new javax.swing.JMenuItem();
-        jMenuItem19 = new javax.swing.JMenuItem();
-        jMenuItem20 = new javax.swing.JMenuItem();
-        Gerar = new javax.swing.JMenu();
-        jMenuItem21 = new javax.swing.JMenuItem();
+        Professor = new javax.swing.JMenu();
+        Assunto = new javax.swing.JMenu();
+        Disciplina = new javax.swing.JMenu();
+        Questão = new javax.swing.JMenu();
+        Prova = new javax.swing.JMenu();
         Sobre = new javax.swing.JMenu();
         Sair = new javax.swing.JMenu();
 
@@ -71,152 +73,152 @@ public class Professor extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Tela Principal");
+        setTitle("Professor");
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(460, 339));
         jPanel1.setLayout(null);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cad.png"))); // NOI18N
-        jMenu3.setText("Cadastrar");
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(null);
 
-        cadastrarProfessor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarProfessor.setText("Professor");
-        cadastrarProfessor.addActionListener(new java.awt.event.ActionListener() {
+        CodigoDoProfessor.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CodigoDoProfessor.setText("Código do professor");
+        jPanel2.add(CodigoDoProfessor);
+        CodigoDoProfessor.setBounds(570, 20, 109, 15);
+        jPanel2.add(campoCodigoProfessor);
+        campoCodigoProfessor.setBounds(690, 10, 60, 30);
+
+        botaoProcurar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoProcurar.setText("Procurar");
+        jPanel2.add(botaoProcurar);
+        botaoProcurar.setBounds(760, 10, 90, 30);
+        jPanel2.add(campoNome);
+        campoNome.setBounds(690, 50, 161, 30);
+
+        Nome.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Nome.setText("Nome");
+        jPanel2.add(Nome);
+        Nome.setBounds(570, 60, 32, 15);
+
+        Login.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Login.setText("Login");
+        jPanel2.add(Login);
+        Login.setBounds(570, 140, 29, 15);
+        jPanel2.add(campoLogin);
+        campoLogin.setBounds(690, 130, 161, 30);
+        jPanel2.add(campoSenha);
+        campoSenha.setBounds(690, 170, 161, 30);
+
+        Senha.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Senha.setText("Senha");
+        jPanel2.add(Senha);
+        Senha.setBounds(570, 180, 34, 15);
+
+        Contato.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Contato.setText("Contato");
+        jPanel2.add(Contato);
+        Contato.setBounds(570, 300, 44, 15);
+
+        caixaDisciplina1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaDisciplina1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        jPanel2.add(caixaDisciplina1);
+        caixaDisciplina1.setBounds(690, 210, 161, 30);
+
+        caixaDisciplina2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaDisciplina2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhuma", "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        jPanel2.add(caixaDisciplina2);
+        caixaDisciplina2.setBounds(690, 250, 161, 30);
+
+        botaoLimpar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoLimpar.setText("Limpar");
+        botaoLimpar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cadastrarProfessorActionPerformed(evt);
+                botaoLimparActionPerformed(evt);
             }
         });
-        jMenu3.add(cadastrarProfessor);
+        jPanel2.add(botaoLimpar);
+        botaoLimpar.setBounds(760, 380, 90, 30);
 
-        cadastrarDisciplina.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarDisciplina.setText("Disciplina");
-        jMenu3.add(cadastrarDisciplina);
-
-        cadastrarAssunto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarAssunto.setText("Assunto");
-        jMenu3.add(cadastrarAssunto);
-
-        cadastrarQuestao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarQuestao.setText("Questão");
-        jMenu3.add(cadastrarQuestao);
-
-        cadastrarProva.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarProva.setText("Prova");
-        jMenu3.add(cadastrarProva);
-
-        jMenuBar2.add(jMenu3);
-
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cons.png"))); // NOI18N
-        jMenu5.setText("Consultar");
-
-        jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem6.setText("Professor");
-        jMenu5.add(jMenuItem6);
-
-        jMenuItem7.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem7.setText("Disciplina");
-        jMenu5.add(jMenuItem7);
-
-        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem8.setText("Assunto");
-        jMenu5.add(jMenuItem8);
-
-        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem9.setText("Questão");
-        jMenu5.add(jMenuItem9);
-
-        jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem10.setText("Prova");
-        jMenu5.add(jMenuItem10);
-
-        jMenuBar2.add(jMenu5);
-
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/alt.png"))); // NOI18N
-        jMenu4.setText("Alterar");
-
-        jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem11.setText("Professor");
-        jMenu4.add(jMenuItem11);
-
-        jMenuItem12.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem12.setText("Disciplina");
-        jMenu4.add(jMenuItem12);
-
-        jMenuItem13.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem13.setText("Assunto");
-        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+        botaoCancelar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoCancelar.setText("Cancelar");
+        botaoCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem13ActionPerformed(evt);
+                botaoCancelarActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem13);
+        jPanel2.add(botaoCancelar);
+        botaoCancelar.setBounds(760, 420, 90, 30);
 
-        jMenuItem14.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem14.setText("Questão");
-        jMenu4.add(jMenuItem14);
-
-        jMenuItem15.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem15.setText("Prova");
-        jMenu4.add(jMenuItem15);
-
-        jMenuBar2.add(jMenu4);
-
-        Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/exc.png"))); // NOI18N
-        Excluir.setText("Excluir");
-
-        jMenuItem16.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem16.setText("Professor");
-        Excluir.add(jMenuItem16);
-
-        jMenuItem17.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem17.setText("Disciplina");
-        jMenuItem17.addActionListener(new java.awt.event.ActionListener() {
+        botaoExcluir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoExcluir.setText("Excluir");
+        botaoExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem17ActionPerformed(evt);
+                botaoExcluirActionPerformed(evt);
             }
         });
-        Excluir.add(jMenuItem17);
+        jPanel2.add(botaoExcluir);
+        botaoExcluir.setBounds(660, 420, 90, 30);
 
-        jMenuItem18.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem18.setText("Assunto");
-        Excluir.add(jMenuItem18);
+        botaoConsultar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoConsultar.setText("Consultar");
+        jPanel2.add(botaoConsultar);
+        botaoConsultar.setBounds(660, 380, 90, 30);
 
-        jMenuItem19.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem19.setText("Questão");
-        Excluir.add(jMenuItem19);
+        botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoCadastrar.setText("Cadastrar");
+        jPanel2.add(botaoCadastrar);
+        botaoCadastrar.setBounds(560, 380, 90, 30);
 
-        jMenuItem20.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem20.setText("Prova");
-        Excluir.add(jMenuItem20);
+        botaoAtualizar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botaoAtualizar.setText("Atualizar");
+        jPanel2.add(botaoAtualizar);
+        botaoAtualizar.setBounds(560, 420, 90, 30);
 
-        jMenuBar2.add(Excluir);
+        Sexo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Sexo.setText("Sexo");
+        jPanel2.add(Sexo);
+        Sexo.setBounds(570, 100, 27, 15);
 
-        Gerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/prova.png"))); // NOI18N
-        Gerar.setText("Gerar");
+        caixaSexo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaSexo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Feminino", "Outro" }));
+        caixaSexo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaSexoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(caixaSexo);
+        caixaSexo.setBounds(690, 90, 160, 30);
 
-        jMenuItem21.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem21.setText("Prova");
-        Gerar.add(jMenuItem21);
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setText("Disciplina");
+        jPanel2.add(jLabel8);
+        jLabel8.setBounds(570, 220, 47, 20);
+        jPanel2.add(jTextField1);
+        jTextField1.setBounds(690, 290, 40, 30);
 
-        jMenuBar2.add(Gerar);
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(0, 0, 860, 460);
 
-        Sobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sobre.png"))); // NOI18N
+        Professor.setText("Professor");
+        jMenuBar2.add(Professor);
+
+        Assunto.setText("Assunto");
+        jMenuBar2.add(Assunto);
+
+        Disciplina.setText("Disciplina");
+        jMenuBar2.add(Disciplina);
+
+        Questão.setText("Questão");
+        jMenuBar2.add(Questão);
+
+        Prova.setText("Prova");
+        jMenuBar2.add(Prova);
+
         Sobre.setText("Sobre");
-        Sobre.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SobreMouseClicked(evt);
-            }
-        });
         jMenuBar2.add(Sobre);
 
-        Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sair.png"))); // NOI18N
         Sair.setText("Sair");
-        Sair.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SairMouseClicked(evt);
-            }
-        });
         jMenuBar2.add(Sair);
 
         setJMenuBar(jMenuBar2);
@@ -236,36 +238,24 @@ public class Professor extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SobreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SobreMouseClicked
-        Sobre sobre = new Sobre();
-        sobre.setVisible(true);
+    private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
+        campoCodigoProfessor.setText("");
+        campoNome.setText("");
+        campoLogin.setText("");
+        campoSenha.setText("");
+    }//GEN-LAST:event_botaoLimparActionPerformed
+
+    private void botaoCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCancelarActionPerformed
         dispose();
-    }//GEN-LAST:event_SobreMouseClicked
+    }//GEN-LAST:event_botaoCancelarActionPerformed
 
-    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+    private void botaoExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoExcluirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem13ActionPerformed
+    }//GEN-LAST:event_botaoExcluirActionPerformed
 
-    private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
+    private void caixaSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaSexoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem17ActionPerformed
-
-    private void cadastrarProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarProfessorActionPerformed
-        CadastroProfessor cadprof = new CadastroProfessor();
-        cadprof.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_cadastrarProfessorActionPerformed
-
-    private void SairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SairMouseClicked
-        int resposta;
-        resposta = JOptionPane.showConfirmDialog(null, "Você realmente deseja fechar o programa?");
-        if (resposta == JOptionPane.YES_OPTION){
-            dispose();
-        }
-        if (resposta == JOptionPane.NO_OPTION){
-            JOptionPane.showMessageDialog(null, "OK. O programa não será fechado.");
-        }
-    }//GEN-LAST:event_SairMouseClicked
+    }//GEN-LAST:event_caixaSexoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,38 +296,40 @@ public class Professor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu Excluir;
-    private javax.swing.JMenu Gerar;
+    private javax.swing.JMenu Assunto;
+    private javax.swing.JLabel CodigoDoProfessor;
+    private javax.swing.JLabel Contato;
+    private javax.swing.JMenu Disciplina;
+    private javax.swing.JLabel Login;
+    private javax.swing.JLabel Nome;
+    private javax.swing.JMenu Professor;
+    private javax.swing.JMenu Prova;
+    private javax.swing.JMenu Questão;
     private javax.swing.JMenu Sair;
+    private javax.swing.JLabel Senha;
+    private javax.swing.JLabel Sexo;
     private javax.swing.JMenu Sobre;
-    private javax.swing.JMenuItem cadastrarAssunto;
-    private javax.swing.JMenuItem cadastrarDisciplina;
-    private javax.swing.JMenuItem cadastrarProfessor;
-    private javax.swing.JMenuItem cadastrarProva;
-    private javax.swing.JMenuItem cadastrarQuestao;
+    private javax.swing.JButton botaoAtualizar;
+    private javax.swing.JButton botaoCadastrar;
+    private javax.swing.JButton botaoCancelar;
+    private javax.swing.JButton botaoConsultar;
+    private javax.swing.JButton botaoExcluir;
+    private javax.swing.JButton botaoLimpar;
+    private javax.swing.JButton botaoProcurar;
+    private javax.swing.JComboBox caixaDisciplina1;
+    private javax.swing.JComboBox caixaDisciplina2;
+    private javax.swing.JComboBox caixaSexo;
+    private javax.swing.JTextField campoCodigoProfessor;
+    private javax.swing.JTextField campoLogin;
+    private javax.swing.JTextField campoNome;
+    private javax.swing.JPasswordField campoSenha;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem15;
-    private javax.swing.JMenuItem jMenuItem16;
-    private javax.swing.JMenuItem jMenuItem17;
-    private javax.swing.JMenuItem jMenuItem18;
-    private javax.swing.JMenuItem jMenuItem19;
-    private javax.swing.JMenuItem jMenuItem20;
-    private javax.swing.JMenuItem jMenuItem21;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

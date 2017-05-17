@@ -41,11 +41,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu6 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
         jMenu9 = new javax.swing.JMenu();
         jMenu10 = new javax.swing.JMenu();
         Sobre = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
-        jMenu8 = new javax.swing.JMenu();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -88,6 +88,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu7.setText("Assunto");
         jMenuBar2.add(jMenu7);
 
+        jMenu8.setText("Disciplina");
+        jMenuBar2.add(jMenu8);
+
         jMenu9.setText("Questão");
         jMenuBar2.add(jMenu9);
 
@@ -105,9 +108,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu3.setText("Sair");
         jMenuBar2.add(jMenu3);
-
-        jMenu8.setText("Disciplina");
-        jMenuBar2.add(jMenu8);
 
         setJMenuBar(jMenuBar2);
 
