@@ -39,34 +39,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         letrinhasMiudas = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        cadastrarProfessor = new javax.swing.JMenuItem();
-        cadastrarDisciplina = new javax.swing.JMenuItem();
-        cadastrarAssunto = new javax.swing.JMenuItem();
-        cadastrarQuestao = new javax.swing.JMenuItem();
-        cadastrarProva = new javax.swing.JMenuItem();
-        jMenu5 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem11 = new javax.swing.JMenuItem();
-        jMenuItem12 = new javax.swing.JMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem14 = new javax.swing.JMenuItem();
-        jMenuItem15 = new javax.swing.JMenuItem();
-        Excluir = new javax.swing.JMenu();
-        jMenuItem16 = new javax.swing.JMenuItem();
-        jMenuItem17 = new javax.swing.JMenuItem();
-        jMenuItem18 = new javax.swing.JMenuItem();
-        jMenuItem19 = new javax.swing.JMenuItem();
-        jMenuItem20 = new javax.swing.JMenuItem();
-        Gerar = new javax.swing.JMenu();
-        jMenuItem21 = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
+        jMenu9 = new javax.swing.JMenu();
+        jMenu10 = new javax.swing.JMenu();
         Sobre = new javax.swing.JMenu();
-        Sair = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -103,129 +82,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(4, 0, 850, 460);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cad.png"))); // NOI18N
-        jMenu3.setText("Cadastrar");
+        jMenu6.setText("Professor");
+        jMenuBar2.add(jMenu6);
 
-        cadastrarProfessor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarProfessor.setText("Professor");
-        cadastrarProfessor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cadastrarProfessorActionPerformed(evt);
-            }
-        });
-        jMenu3.add(cadastrarProfessor);
+        jMenu7.setText("Assunto");
+        jMenuBar2.add(jMenu7);
 
-        cadastrarDisciplina.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarDisciplina.setText("Disciplina");
-        jMenu3.add(cadastrarDisciplina);
+        jMenu9.setText("Questão");
+        jMenuBar2.add(jMenu9);
 
-        cadastrarAssunto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarAssunto.setText("Assunto");
-        jMenu3.add(cadastrarAssunto);
-
-        cadastrarQuestao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarQuestao.setText("Questão");
-        jMenu3.add(cadastrarQuestao);
-
-        cadastrarProva.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_MASK));
-        cadastrarProva.setText("Prova");
-        jMenu3.add(cadastrarProva);
-
-        jMenuBar2.add(jMenu3);
-
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cons.png"))); // NOI18N
-        jMenu5.setText("Consultar");
-
-        jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem6.setText("Professor");
-        jMenu5.add(jMenuItem6);
-
-        jMenuItem7.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem7.setText("Disciplina");
-        jMenu5.add(jMenuItem7);
-
-        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem8.setText("Assunto");
-        jMenu5.add(jMenuItem8);
-
-        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem9.setText("Questão");
-        jMenu5.add(jMenuItem9);
-
-        jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem10.setText("Prova");
-        jMenu5.add(jMenuItem10);
-
-        jMenuBar2.add(jMenu5);
-
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/alt.png"))); // NOI18N
-        jMenu4.setText("Alterar");
-
-        jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem11.setText("Professor");
-        jMenu4.add(jMenuItem11);
-
-        jMenuItem12.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem12.setText("Disciplina");
-        jMenu4.add(jMenuItem12);
-
-        jMenuItem13.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem13.setText("Assunto");
-        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem13ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem13);
-
-        jMenuItem14.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem14.setText("Questão");
-        jMenu4.add(jMenuItem14);
-
-        jMenuItem15.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem15.setText("Prova");
-        jMenu4.add(jMenuItem15);
-
-        jMenuBar2.add(jMenu4);
-
-        Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/exc.png"))); // NOI18N
-        Excluir.setText("Excluir");
-
-        jMenuItem16.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem16.setText("Professor");
-        Excluir.add(jMenuItem16);
-
-        jMenuItem17.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem17.setText("Disciplina");
-        jMenuItem17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem17ActionPerformed(evt);
-            }
-        });
-        Excluir.add(jMenuItem17);
-
-        jMenuItem18.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem18.setText("Assunto");
-        Excluir.add(jMenuItem18);
-
-        jMenuItem19.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem19.setText("Questão");
-        Excluir.add(jMenuItem19);
-
-        jMenuItem20.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem20.setText("Prova");
-        Excluir.add(jMenuItem20);
-
-        jMenuBar2.add(Excluir);
-
-        Gerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/prova.png"))); // NOI18N
-        Gerar.setText("Gerar");
-
-        jMenuItem21.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem21.setText("Prova");
-        Gerar.add(jMenuItem21);
-
-        jMenuBar2.add(Gerar);
+        jMenu10.setText("Prova");
+        jMenuBar2.add(jMenu10);
 
         Sobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sobre.png"))); // NOI18N
         Sobre.setText("Sobre");
@@ -236,14 +103,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMenuBar2.add(Sobre);
 
-        Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sair.png"))); // NOI18N
-        Sair.setText("Sair");
-        Sair.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SairMouseClicked(evt);
-            }
-        });
-        jMenuBar2.add(Sair);
+        jMenu3.setText("Sair");
+        jMenuBar2.add(jMenu3);
+
+        jMenu8.setText("Disciplina");
+        jMenuBar2.add(jMenu8);
 
         setJMenuBar(jMenuBar2);
 
@@ -267,31 +131,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         sobre.setVisible(true);
         dispose();
     }//GEN-LAST:event_SobreMouseClicked
-
-    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem13ActionPerformed
-
-    private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem17ActionPerformed
-
-    private void cadastrarProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarProfessorActionPerformed
-        CadastroProfessor cadprof = new CadastroProfessor();
-        cadprof.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_cadastrarProfessorActionPerformed
-
-    private void SairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SairMouseClicked
-        int resposta;
-        resposta = JOptionPane.showConfirmDialog(null, "Você realmente deseja fechar o programa?");
-        if (resposta == JOptionPane.YES_OPTION){
-            dispose();
-        }
-        if (resposta == JOptionPane.NO_OPTION){
-            JOptionPane.showMessageDialog(null, "OK. O programa não será fechado.");
-        }
-    }//GEN-LAST:event_SairMouseClicked
 
     /**
      * @param args the command line arguments
@@ -330,41 +169,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu Excluir;
-    private javax.swing.JMenu Gerar;
-    private javax.swing.JMenu Sair;
     private javax.swing.JMenu Sobre;
     private javax.swing.JLabel Subtitulo;
     private javax.swing.JLabel Titulo;
-    private javax.swing.JMenuItem cadastrarAssunto;
-    private javax.swing.JMenuItem cadastrarDisciplina;
-    private javax.swing.JMenuItem cadastrarProfessor;
-    private javax.swing.JMenuItem cadastrarProva;
-    private javax.swing.JMenuItem cadastrarQuestao;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem15;
-    private javax.swing.JMenuItem jMenuItem16;
-    private javax.swing.JMenuItem jMenuItem17;
-    private javax.swing.JMenuItem jMenuItem18;
-    private javax.swing.JMenuItem jMenuItem19;
-    private javax.swing.JMenuItem jMenuItem20;
-    private javax.swing.JMenuItem jMenuItem21;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel letrinhasMiudas;
     // End of variables declaration//GEN-END:variables
