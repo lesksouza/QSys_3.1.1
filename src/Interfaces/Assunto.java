@@ -40,8 +40,7 @@ public class Assunto extends javax.swing.JFrame {
         botaoProcurar = new javax.swing.JButton();
         campoNome = new javax.swing.JTextField();
         Nome = new javax.swing.JLabel();
-        caixaDisciplina1 = new javax.swing.JComboBox();
-        caixaDisciplina2 = new javax.swing.JComboBox();
+        caixaDisciplina = new javax.swing.JComboBox();
         botaoLimpar = new javax.swing.JButton();
         botaoCancelar = new javax.swing.JButton();
         botaoExcluir = new javax.swing.JButton();
@@ -49,6 +48,8 @@ public class Assunto extends javax.swing.JFrame {
         botaoCadastrar = new javax.swing.JButton();
         botaoAtualizar = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        caixaGrauDeEnsino = new javax.swing.JComboBox();
         Fundo = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         Professor = new javax.swing.JMenu();
@@ -94,15 +95,10 @@ public class Assunto extends javax.swing.JFrame {
         jPanel2.add(Nome);
         Nome.setBounds(20, 60, 32, 15);
 
-        caixaDisciplina1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaDisciplina1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
-        jPanel2.add(caixaDisciplina1);
-        caixaDisciplina1.setBounds(140, 90, 161, 30);
-
-        caixaDisciplina2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaDisciplina2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhuma", "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
-        jPanel2.add(caixaDisciplina2);
-        caixaDisciplina2.setBounds(140, 130, 161, 30);
+        caixaDisciplina.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaDisciplina.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        jPanel2.add(caixaDisciplina);
+        caixaDisciplina.setBounds(140, 90, 161, 30);
 
         botaoLimpar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoLimpar.setText("Limpar");
@@ -153,6 +149,21 @@ public class Assunto extends javax.swing.JFrame {
         jLabel8.setText("Disciplina");
         jPanel2.add(jLabel8);
         jLabel8.setBounds(20, 100, 47, 20);
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel9.setText("Grau de ensino");
+        jPanel2.add(jLabel9);
+        jLabel9.setBounds(20, 140, 90, 20);
+
+        caixaGrauDeEnsino.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaGrauDeEnsino.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ensino Fundamental", "Ensino Médio", "Ensino Superior" }));
+        caixaGrauDeEnsino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaGrauDeEnsinoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(caixaGrauDeEnsino);
+        caixaGrauDeEnsino.setBounds(140, 130, 161, 30);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
         jPanel2.add(Fundo);
@@ -211,6 +222,10 @@ public class Assunto extends javax.swing.JFrame {
     private void botaoExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoExcluirActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botaoExcluirActionPerformed
+
+    private void caixaGrauDeEnsinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaGrauDeEnsinoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_caixaGrauDeEnsinoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -272,11 +287,12 @@ public class Assunto extends javax.swing.JFrame {
     private javax.swing.JButton botaoExcluir;
     private javax.swing.JButton botaoLimpar;
     private javax.swing.JButton botaoProcurar;
-    private javax.swing.JComboBox caixaDisciplina1;
-    private javax.swing.JComboBox caixaDisciplina2;
+    private javax.swing.JComboBox caixaDisciplina;
+    private javax.swing.JComboBox caixaGrauDeEnsino;
     private javax.swing.JTextField campoCodigoProfessor;
     private javax.swing.JTextField campoNome;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
