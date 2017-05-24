@@ -26,11 +26,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Professor"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ProfessorMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Assunto">
           <Properties>
             <Property name="text" type="java.lang.String" value="Assunto"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AssuntoMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Disciplina">
           <Properties>
@@ -41,11 +47,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Quest&#xe3;o"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Quest&#xe3;oMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Prova">
           <Properties>
             <Property name="text" type="java.lang.String" value="Prova"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ProvaMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Sobre">
           <Properties>
@@ -184,10 +196,10 @@
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
-                    <StringItem index="0" value="Ci&#xea;ncias da Natureza e suas Tecnologias"/>
-                    <StringItem index="1" value="Ci&#xea;ncias Humanas e suas Tecnologias"/>
-                    <StringItem index="2" value="Linguagens, C&#xf3;digos e suas Tecnologias"/>
-                    <StringItem index="3" value="Matem&#xe1;tica e suas Tecnologias"/>
+                    <StringItem index="0" value="Ci&#xea;ncias da Natureza"/>
+                    <StringItem index="1" value="Ci&#xea;ncias Humanas"/>
+                    <StringItem index="2" value="Linguagens e C&#xf3;digos"/>
+                    <StringItem index="3" value="Matem&#xe1;tica"/>
                   </StringArray>
                 </Property>
               </Properties>

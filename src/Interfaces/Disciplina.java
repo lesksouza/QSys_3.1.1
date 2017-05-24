@@ -94,7 +94,7 @@ public class Disciplina extends javax.swing.JFrame {
         Nome.setBounds(20, 60, 32, 15);
 
         caixaÁrea.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaÁrea.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ciências da Natureza e suas Tecnologias", "Ciências Humanas e suas Tecnologias", "Linguagens, Códigos e suas Tecnologias", "Matemática e suas Tecnologias" }));
+        caixaÁrea.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ciências da Natureza", "Ciências Humanas", "Linguagens e Códigos", "Matemática" }));
         jPanel2.add(caixaÁrea);
         caixaÁrea.setBounds(140, 90, 161, 30);
 
@@ -156,18 +156,38 @@ public class Disciplina extends javax.swing.JFrame {
         jPanel2.setBounds(0, 0, 860, 460);
 
         Professor.setText("Professor");
+        Professor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ProfessorMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Professor);
 
         Assunto.setText("Assunto");
+        Assunto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AssuntoMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Assunto);
 
         Disciplina.setText("Disciplina");
         jMenuBar2.add(Disciplina);
 
         Questão.setText("Questão");
+        Questão.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                QuestãoMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Questão);
 
         Prova.setText("Prova");
+        Prova.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ProvaMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Prova);
 
         Sobre.setText("Sobre");
@@ -205,6 +225,30 @@ public class Disciplina extends javax.swing.JFrame {
     private void botaoExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoExcluirActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botaoExcluirActionPerformed
+
+    private void AssuntoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssuntoMouseClicked
+        Assunto assunto = new Assunto();
+        assunto.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_AssuntoMouseClicked
+
+    private void ProfessorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProfessorMouseClicked
+        Professor professor = new Professor();
+        professor.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ProfessorMouseClicked
+
+    private void QuestãoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QuestãoMouseClicked
+        Questao questao = new Questao();
+        questao.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_QuestãoMouseClicked
+
+    private void ProvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProvaMouseClicked
+        Prova prova = new Prova();
+        prova.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ProvaMouseClicked
 
     /**
      * @param args the command line arguments
