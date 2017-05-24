@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
  *
  * @author XPerience
  */
-public class Assunto extends javax.swing.JFrame {
+public class Questão extends javax.swing.JFrame {
 
     /**
      * Creates new form Principal
      */
-    public Assunto() {
+    public Questão() {
         initComponents();
     }
 
@@ -36,22 +36,20 @@ public class Assunto extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         CodigoDoAssunto = new javax.swing.JLabel();
-        campoCodigoAssunto = new javax.swing.JTextField();
+        campoCodigoProfessor = new javax.swing.JTextField();
         botaoProcurar = new javax.swing.JButton();
         campoNome = new javax.swing.JTextField();
         Nome = new javax.swing.JLabel();
-        caixaÁrea = new javax.swing.JComboBox();
+        caixaDisciplina = new javax.swing.JComboBox();
         botaoLimpar = new javax.swing.JButton();
         botaoCancelar = new javax.swing.JButton();
         botaoExcluir = new javax.swing.JButton();
         botaoConsultar = new javax.swing.JButton();
         botaoCadastrar = new javax.swing.JButton();
         botaoAtualizar = new javax.swing.JButton();
-        Área = new javax.swing.JLabel();
-        caixaDisciplina = new javax.swing.JComboBox();
-        TextoDisciplina = new javax.swing.JLabel();
-        GrauDeEducação = new javax.swing.JLabel();
-        caixaGrauDeEducação = new javax.swing.JComboBox();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        caixaGrauDeEnsino = new javax.swing.JComboBox();
         Fundo = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         Professor = new javax.swing.JMenu();
@@ -81,26 +79,26 @@ public class Assunto extends javax.swing.JFrame {
         CodigoDoAssunto.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         CodigoDoAssunto.setText("Código do assunto");
         jPanel2.add(CodigoDoAssunto);
-        CodigoDoAssunto.setBounds(560, 20, 110, 15);
-        jPanel2.add(campoCodigoAssunto);
-        campoCodigoAssunto.setBounds(680, 10, 60, 30);
+        CodigoDoAssunto.setBounds(20, 20, 101, 15);
+        jPanel2.add(campoCodigoProfessor);
+        campoCodigoProfessor.setBounds(140, 10, 60, 30);
 
         botaoProcurar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoProcurar.setText("Procurar");
         jPanel2.add(botaoProcurar);
-        botaoProcurar.setBounds(750, 10, 90, 30);
+        botaoProcurar.setBounds(210, 10, 90, 30);
         jPanel2.add(campoNome);
-        campoNome.setBounds(680, 50, 161, 30);
+        campoNome.setBounds(140, 50, 161, 30);
 
         Nome.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Nome.setText("Nome");
         jPanel2.add(Nome);
-        Nome.setBounds(560, 60, 32, 15);
+        Nome.setBounds(20, 60, 32, 15);
 
-        caixaÁrea.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaÁrea.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ciências da Natureza", "Ciências Humanas", "Curso de Agronegócio", "Curso de Eletrotécnica", "Curso de Enfermagem", "Curso de Informática", "Linguagens e Códigos", "Matemática" }));
-        jPanel2.add(caixaÁrea);
-        caixaÁrea.setBounds(680, 130, 161, 30);
+        caixaDisciplina.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaDisciplina.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        jPanel2.add(caixaDisciplina);
+        caixaDisciplina.setBounds(140, 90, 161, 30);
 
         botaoLimpar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoLimpar.setText("Limpar");
@@ -110,7 +108,7 @@ public class Assunto extends javax.swing.JFrame {
             }
         });
         jPanel2.add(botaoLimpar);
-        botaoLimpar.setBounds(760, 210, 90, 30);
+        botaoLimpar.setBounds(210, 170, 90, 30);
 
         botaoCancelar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoCancelar.setText("Cancelar");
@@ -120,7 +118,7 @@ public class Assunto extends javax.swing.JFrame {
             }
         });
         jPanel2.add(botaoCancelar);
-        botaoCancelar.setBounds(760, 250, 90, 30);
+        botaoCancelar.setBounds(210, 210, 90, 30);
 
         botaoExcluir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoExcluir.setText("Excluir");
@@ -130,88 +128,63 @@ public class Assunto extends javax.swing.JFrame {
             }
         });
         jPanel2.add(botaoExcluir);
-        botaoExcluir.setBounds(660, 250, 90, 30);
+        botaoExcluir.setBounds(110, 210, 90, 30);
 
         botaoConsultar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoConsultar.setText("Consultar");
         jPanel2.add(botaoConsultar);
-        botaoConsultar.setBounds(660, 210, 90, 30);
+        botaoConsultar.setBounds(110, 170, 90, 30);
 
         botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoCadastrar.setText("Cadastrar");
         jPanel2.add(botaoCadastrar);
-        botaoCadastrar.setBounds(560, 210, 90, 30);
+        botaoCadastrar.setBounds(10, 170, 90, 30);
 
         botaoAtualizar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoAtualizar.setText("Atualizar");
         jPanel2.add(botaoAtualizar);
-        botaoAtualizar.setBounds(560, 250, 90, 30);
+        botaoAtualizar.setBounds(10, 210, 90, 30);
 
-        Área.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        Área.setText("Área");
-        jPanel2.add(Área);
-        Área.setBounds(560, 140, 25, 20);
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setText("Disciplina");
+        jPanel2.add(jLabel8);
+        jLabel8.setBounds(20, 100, 47, 20);
 
-        caixaDisciplina.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaDisciplina.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
-        jPanel2.add(caixaDisciplina);
-        caixaDisciplina.setBounds(680, 90, 160, 30);
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel9.setText("Grau de ensino");
+        jPanel2.add(jLabel9);
+        jLabel9.setBounds(20, 140, 90, 20);
 
-        TextoDisciplina.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        TextoDisciplina.setText("Disciplina");
-        jPanel2.add(TextoDisciplina);
-        TextoDisciplina.setBounds(560, 100, 50, 15);
-
-        GrauDeEducação.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        GrauDeEducação.setText("Grau de Educação");
-        jPanel2.add(GrauDeEducação);
-        GrauDeEducação.setBounds(560, 180, 110, 15);
-
-        caixaGrauDeEducação.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaGrauDeEducação.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ensino Fundamental", "Ensino Médio", "Ensino Superior" }));
-        jPanel2.add(caixaGrauDeEducação);
-        caixaGrauDeEducação.setBounds(680, 170, 160, 30);
+        caixaGrauDeEnsino.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaGrauDeEnsino.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ensino Fundamental", "Ensino Médio", "Ensino Superior" }));
+        caixaGrauDeEnsino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaGrauDeEnsinoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(caixaGrauDeEnsino);
+        caixaGrauDeEnsino.setBounds(140, 130, 161, 30);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
         jPanel2.add(Fundo);
-        Fundo.setBounds(0, 0, 1340, 460);
+        Fundo.setBounds(-410, 0, 1340, 460);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(0, 0, 860, 460);
 
         Professor.setText("Professor");
-        Professor.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ProfessorMouseClicked(evt);
-            }
-        });
         jMenuBar2.add(Professor);
 
         Assunto.setText("Assunto");
-        Assunto.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                AssuntoMouseClicked(evt);
-            }
-        });
         jMenuBar2.add(Assunto);
 
         Disciplina.setText("Disciplina");
         jMenuBar2.add(Disciplina);
 
         Questão.setText("Questão");
-        Questão.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                QuestãoMouseClicked(evt);
-            }
-        });
         jMenuBar2.add(Questão);
 
         Prova.setText("Prova");
-        Prova.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ProvaMouseClicked(evt);
-            }
-        });
         jMenuBar2.add(Prova);
 
         Sobre.setText("Sobre");
@@ -238,7 +211,7 @@ public class Assunto extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
-        campoCodigoAssunto.setText("");
+        campoCodigoProfessor.setText("");
         campoNome.setText("");
     }//GEN-LAST:event_botaoLimparActionPerformed
 
@@ -250,29 +223,9 @@ public class Assunto extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_botaoExcluirActionPerformed
 
-    private void AssuntoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssuntoMouseClicked
-        Prova assunto = new Prova();
-        assunto.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_AssuntoMouseClicked
-
-    private void ProfessorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProfessorMouseClicked
-        Professor professor = new Professor();
-        professor.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_ProfessorMouseClicked
-
-    private void QuestãoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QuestãoMouseClicked
-        Questão questao = new Questão();
-        questao.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_QuestãoMouseClicked
-
-    private void ProvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProvaMouseClicked
-        Prova prova = new Prova();
-        prova.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_ProvaMouseClicked
+    private void caixaGrauDeEnsinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaGrauDeEnsinoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_caixaGrauDeEnsinoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -291,13 +244,13 @@ public class Assunto extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Assunto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Questão.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Assunto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Questão.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Assunto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Questão.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Assunto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Questão.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -335,7 +288,7 @@ public class Assunto extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Assunto().setVisible(true);
+                new Questão().setVisible(true);
             }
         });
     }
@@ -345,14 +298,12 @@ public class Assunto extends javax.swing.JFrame {
     private javax.swing.JLabel CodigoDoAssunto;
     private javax.swing.JMenu Disciplina;
     private javax.swing.JLabel Fundo;
-    private javax.swing.JLabel GrauDeEducação;
     private javax.swing.JLabel Nome;
     private javax.swing.JMenu Professor;
     private javax.swing.JMenu Prova;
     private javax.swing.JMenu Questão;
     private javax.swing.JMenu Sair;
     private javax.swing.JMenu Sobre;
-    private javax.swing.JLabel TextoDisciplina;
     private javax.swing.JButton botaoAtualizar;
     private javax.swing.JButton botaoCadastrar;
     private javax.swing.JButton botaoCancelar;
@@ -361,16 +312,16 @@ public class Assunto extends javax.swing.JFrame {
     private javax.swing.JButton botaoLimpar;
     private javax.swing.JButton botaoProcurar;
     private javax.swing.JComboBox caixaDisciplina;
-    private javax.swing.JComboBox caixaGrauDeEducação;
-    private javax.swing.JComboBox caixaÁrea;
-    private javax.swing.JTextField campoCodigoAssunto;
+    private javax.swing.JComboBox caixaGrauDeEnsino;
+    private javax.swing.JTextField campoCodigoProfessor;
     private javax.swing.JTextField campoNome;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel Área;
     // End of variables declaration//GEN-END:variables
 }

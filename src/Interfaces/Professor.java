@@ -69,6 +69,7 @@ public class Professor extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         textoExperiencias = new javax.swing.JTextPane();
+        DiretorTurma = new javax.swing.JCheckBox();
         Fundo = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         Professor = new javax.swing.JMenu();
@@ -225,42 +226,47 @@ public class Professor extends javax.swing.JFrame {
         selecaoLicenciatura.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         selecaoLicenciatura.setText("Licenciatura");
         jPanel2.add(selecaoLicenciatura);
-        selecaoLicenciatura.setBounds(640, 53, 100, 30);
+        selecaoLicenciatura.setBounds(640, 30, 100, 30);
 
         selecaoBacharelado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         selecaoBacharelado.setText("Bacharelado");
         jPanel2.add(selecaoBacharelado);
-        selecaoBacharelado.setBounds(750, 50, 90, 30);
+        selecaoBacharelado.setBounds(750, 30, 90, 30);
 
         selecaoEspecializacao.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         selecaoEspecializacao.setText("Especialização");
         jPanel2.add(selecaoEspecializacao);
-        selecaoEspecializacao.setBounds(640, 93, 100, 30);
+        selecaoEspecializacao.setBounds(640, 70, 100, 30);
 
         selecaoMestrado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         selecaoMestrado.setText("Mestrado");
         jPanel2.add(selecaoMestrado);
-        selecaoMestrado.setBounds(750, 90, 90, 40);
+        selecaoMestrado.setBounds(750, 70, 90, 30);
 
         selecaoDoutorado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         selecaoDoutorado.setText("Doutorado");
         jPanel2.add(selecaoDoutorado);
-        selecaoDoutorado.setBounds(640, 130, 90, 40);
+        selecaoDoutorado.setBounds(640, 100, 90, 40);
 
         selecaoPosDoutorado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         selecaoPosDoutorado.setText("Pós-Doutorado");
         jPanel2.add(selecaoPosDoutorado);
-        selecaoPosDoutorado.setBounds(640, 173, 110, 30);
+        selecaoPosDoutorado.setBounds(750, 110, 110, 20);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Experiências anteriores ou Currículo:");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(640, 210, 200, 30);
+        jLabel1.setBounds(640, 140, 200, 30);
 
         jScrollPane1.setViewportView(textoExperiencias);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(640, 250, 200, 200);
+        jScrollPane1.setBounds(640, 180, 200, 230);
+
+        DiretorTurma.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        DiretorTurma.setText("Diretor de Turma");
+        jPanel2.add(DiretorTurma);
+        DiretorTurma.setBounds(640, 420, 130, 23);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
         jPanel2.add(Fundo);
@@ -273,6 +279,11 @@ public class Professor extends javax.swing.JFrame {
         jMenuBar2.add(Professor);
 
         Assunto.setText("Assunto");
+        Assunto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AssuntoMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Assunto);
 
         Disciplina.setText("Disciplina");
@@ -328,6 +339,12 @@ public class Professor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_caixaSexoActionPerformed
 
+    private void AssuntoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssuntoMouseClicked
+        Assunto assunto = new Assunto();
+        assunto.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_AssuntoMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -370,6 +387,7 @@ public class Professor extends javax.swing.JFrame {
     private javax.swing.JMenu Assunto;
     private javax.swing.JLabel CodigoDoProfessor;
     private javax.swing.JLabel Contato;
+    private javax.swing.JCheckBox DiretorTurma;
     private javax.swing.JMenu Disciplina;
     private javax.swing.JLabel Email;
     private javax.swing.JLabel Fundo;

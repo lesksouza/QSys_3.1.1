@@ -39,13 +39,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         letrinhasMiudas = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu6 = new javax.swing.JMenu();
-        jMenu7 = new javax.swing.JMenu();
-        jMenu8 = new javax.swing.JMenu();
-        jMenu9 = new javax.swing.JMenu();
-        jMenu10 = new javax.swing.JMenu();
+        Professor = new javax.swing.JMenu();
+        Assunto = new javax.swing.JMenu();
+        Disciplina = new javax.swing.JMenu();
+        Questão = new javax.swing.JMenu();
+        Prova = new javax.swing.JMenu();
         Sobre = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
+        Sair = new javax.swing.JMenu();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -82,20 +82,45 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(4, 0, 850, 460);
 
-        jMenu6.setText("Professor");
-        jMenuBar2.add(jMenu6);
+        Professor.setText("Professor");
+        Professor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ProfessorMouseClicked(evt);
+            }
+        });
+        jMenuBar2.add(Professor);
 
-        jMenu7.setText("Assunto");
-        jMenuBar2.add(jMenu7);
+        Assunto.setText("Assunto");
+        Assunto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AssuntoMouseClicked(evt);
+            }
+        });
+        jMenuBar2.add(Assunto);
 
-        jMenu8.setText("Disciplina");
-        jMenuBar2.add(jMenu8);
+        Disciplina.setText("Disciplina");
+        Disciplina.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DisciplinaMouseClicked(evt);
+            }
+        });
+        jMenuBar2.add(Disciplina);
 
-        jMenu9.setText("Questão");
-        jMenuBar2.add(jMenu9);
+        Questão.setText("Questão");
+        Questão.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                QuestãoMouseClicked(evt);
+            }
+        });
+        jMenuBar2.add(Questão);
 
-        jMenu10.setText("Prova");
-        jMenuBar2.add(jMenu10);
+        Prova.setText("Prova");
+        Prova.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ProvaMouseClicked(evt);
+            }
+        });
+        jMenuBar2.add(Prova);
 
         Sobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sobre.png"))); // NOI18N
         Sobre.setText("Sobre");
@@ -106,8 +131,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMenuBar2.add(Sobre);
 
-        jMenu3.setText("Sair");
-        jMenuBar2.add(jMenu3);
+        Sair.setText("Sair");
+        Sair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SairMouseClicked(evt);
+            }
+        });
+        jMenuBar2.add(Sair);
 
         setJMenuBar(jMenuBar2);
 
@@ -131,6 +161,40 @@ public class TelaPrincipal extends javax.swing.JFrame {
         sobre.setVisible(true);
         dispose();
     }//GEN-LAST:event_SobreMouseClicked
+
+    private void ProfessorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProfessorMouseClicked
+        Professor professor = new Professor();
+        professor.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ProfessorMouseClicked
+
+    private void AssuntoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssuntoMouseClicked
+        Assunto assunto = new Assunto();
+        assunto.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_AssuntoMouseClicked
+
+    private void DisciplinaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DisciplinaMouseClicked
+        Disciplina disciplina = new Disciplina();
+        disciplina.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_DisciplinaMouseClicked
+
+    private void QuestãoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QuestãoMouseClicked
+        Questão questão = new Questão();
+        questão.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_QuestãoMouseClicked
+
+    private void ProvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProvaMouseClicked
+        Prova prova = new Prova();
+        prova.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ProvaMouseClicked
+
+    private void SairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SairMouseClicked
+        dispose();
+    }//GEN-LAST:event_SairMouseClicked
 
     /**
      * @param args the command line arguments
@@ -169,18 +233,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Assunto;
+    private javax.swing.JMenu Disciplina;
+    private javax.swing.JMenu Professor;
+    private javax.swing.JMenu Prova;
+    private javax.swing.JMenu Questão;
+    private javax.swing.JMenu Sair;
     private javax.swing.JMenu Sobre;
     private javax.swing.JLabel Subtitulo;
     private javax.swing.JLabel Titulo;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenu jMenu8;
-    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanel1;

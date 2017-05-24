@@ -47,7 +47,14 @@ public class Disciplina extends javax.swing.JFrame {
         botaoConsultar = new javax.swing.JButton();
         botaoCadastrar = new javax.swing.JButton();
         botaoAtualizar = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
+        Área = new javax.swing.JLabel();
+        CargaHorária = new javax.swing.JLabel();
+        campoCargaHorária = new javax.swing.JTextField();
+        Horas = new javax.swing.JLabel();
+        Professores = new javax.swing.JLabel();
+        caixaProfessores1 = new javax.swing.JComboBox();
+        caixaProfessores2 = new javax.swing.JComboBox();
+        caixaProfessores3 = new javax.swing.JComboBox();
         Fundo = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         Professor = new javax.swing.JMenu();
@@ -94,9 +101,9 @@ public class Disciplina extends javax.swing.JFrame {
         Nome.setBounds(20, 60, 32, 15);
 
         caixaÁrea.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaÁrea.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ciências da Natureza", "Ciências Humanas", "Linguagens e Códigos", "Matemática" }));
+        caixaÁrea.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ciências da Natureza", "Ciências Humanas", "Curso de Agronegócio", "Curso de Eletrotécnica", "Curso de Enfermagem", "Curso de Informática", "Linguagens e Códigos", "Matemática" }));
         jPanel2.add(caixaÁrea);
-        caixaÁrea.setBounds(140, 90, 161, 30);
+        caixaÁrea.setBounds(140, 210, 161, 30);
 
         botaoLimpar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoLimpar.setText("Limpar");
@@ -106,7 +113,7 @@ public class Disciplina extends javax.swing.JFrame {
             }
         });
         jPanel2.add(botaoLimpar);
-        botaoLimpar.setBounds(210, 130, 90, 30);
+        botaoLimpar.setBounds(220, 290, 90, 30);
 
         botaoCancelar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoCancelar.setText("Cancelar");
@@ -116,7 +123,7 @@ public class Disciplina extends javax.swing.JFrame {
             }
         });
         jPanel2.add(botaoCancelar);
-        botaoCancelar.setBounds(210, 170, 90, 30);
+        botaoCancelar.setBounds(220, 330, 90, 30);
 
         botaoExcluir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoExcluir.setText("Excluir");
@@ -126,27 +133,74 @@ public class Disciplina extends javax.swing.JFrame {
             }
         });
         jPanel2.add(botaoExcluir);
-        botaoExcluir.setBounds(110, 170, 90, 30);
+        botaoExcluir.setBounds(120, 330, 90, 30);
 
         botaoConsultar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoConsultar.setText("Consultar");
         jPanel2.add(botaoConsultar);
-        botaoConsultar.setBounds(110, 130, 90, 30);
+        botaoConsultar.setBounds(120, 290, 90, 30);
 
         botaoCadastrar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoCadastrar.setText("Cadastrar");
         jPanel2.add(botaoCadastrar);
-        botaoCadastrar.setBounds(10, 130, 90, 30);
+        botaoCadastrar.setBounds(20, 290, 90, 30);
 
         botaoAtualizar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoAtualizar.setText("Atualizar");
         jPanel2.add(botaoAtualizar);
-        botaoAtualizar.setBounds(10, 170, 90, 30);
+        botaoAtualizar.setBounds(20, 330, 90, 30);
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel8.setText("Área");
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(20, 100, 25, 20);
+        Área.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Área.setText("Área");
+        jPanel2.add(Área);
+        Área.setBounds(20, 220, 25, 20);
+
+        CargaHorária.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CargaHorária.setText("Carga Horária");
+        jPanel2.add(CargaHorária);
+        CargaHorária.setBounds(20, 260, 80, 15);
+        jPanel2.add(campoCargaHorária);
+        campoCargaHorária.setBounds(140, 250, 50, 30);
+
+        Horas.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Horas.setText("horas de aula");
+        jPanel2.add(Horas);
+        Horas.setBounds(200, 260, 80, 15);
+
+        Professores.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Professores.setText("Professor(es):");
+        jPanel2.add(Professores);
+        Professores.setBounds(20, 100, 80, 15);
+
+        caixaProfessores1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaProfessores1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhum", "Amanda Albuquerque", "Antonio Cosmo", "Arlindo Araújo", "Carlos Henrique", "Cláudio Matias", "Daniel Frutuoso", "Ednajar", "Elder", "Elieuza Rodrigues", "Emanuel Magalhães", "Emerson Teles", "Érica Nenes", "Felipe Alves", "Joarilúcio", "Leandro Paz", "Leidiane Vale", "Nábia Araújo", "Ozenário Abrantes", "Paulo Filho", "Paulo George", "Rafael Saraiva", "Ramon", "Roniele Rodrigues", "Sayonara Mineiro", "Suely Abrantes", "Vanessa Souza", "Talita" }));
+        caixaProfessores1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaProfessores1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(caixaProfessores1);
+        caixaProfessores1.setBounds(140, 170, 160, 30);
+
+        caixaProfessores2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaProfessores2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Amanda Albuquerque", "Antonio Cosmo", "Arlindo Araújo", "Carlos Henrique", "Cláudio Matias", "Daniel Frutuoso", "Ednajar", "Elder", "Elieuza Rodrigues", "Emanuel Magalhães", "Emerson Teles", "Érica Nenes", "Felipe Alves", "Joarilúcio", "Leandro Paz", "Leidiane Vale", "Nábia Araújo", "Ozenário Abrantes", "Paulo Filho", "Paulo George", "Rafael Saraiva", "Ramon", "Roniele Rodrigues", "Sayonara Mineiro", "Suely Abrantes", "Vanessa Souza", "Talita" }));
+        caixaProfessores2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaProfessores2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(caixaProfessores2);
+        caixaProfessores2.setBounds(140, 90, 160, 30);
+
+        caixaProfessores3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaProfessores3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhum", "Amanda Albuquerque", "Antonio Cosmo", "Arlindo Araújo", "Carlos Henrique", "Cláudio Matias", "Daniel Frutuoso", "Ednajar", "Elder", "Elieuza Rodrigues", "Emanuel Magalhães", "Emerson Teles", "Érica Nenes", "Felipe Alves", "Joarilúcio", "Leandro Paz", "Leidiane Vale", "Nábia Araújo", "Ozenário Abrantes", "Paulo Filho", "Paulo George", "Rafael Saraiva", "Ramon", "Roniele Rodrigues", "Sayonara Mineiro", "Suely Abrantes", "Vanessa Souza", "Talita" }));
+        caixaProfessores3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaProfessores3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(caixaProfessores3);
+        caixaProfessores3.setBounds(140, 130, 160, 30);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
         jPanel2.add(Fundo);
@@ -227,7 +281,7 @@ public class Disciplina extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoExcluirActionPerformed
 
     private void AssuntoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssuntoMouseClicked
-        Assunto assunto = new Assunto();
+        Prova assunto = new Prova();
         assunto.setVisible(true);
         dispose();
     }//GEN-LAST:event_AssuntoMouseClicked
@@ -239,7 +293,7 @@ public class Disciplina extends javax.swing.JFrame {
     }//GEN-LAST:event_ProfessorMouseClicked
 
     private void QuestãoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QuestãoMouseClicked
-        Questao questao = new Questao();
+        Questão questao = new Questão();
         questao.setVisible(true);
         dispose();
     }//GEN-LAST:event_QuestãoMouseClicked
@@ -249,6 +303,18 @@ public class Disciplina extends javax.swing.JFrame {
         prova.setVisible(true);
         dispose();
     }//GEN-LAST:event_ProvaMouseClicked
+
+    private void caixaProfessores1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaProfessores1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_caixaProfessores1ActionPerformed
+
+    private void caixaProfessores2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaProfessores2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_caixaProfessores2ActionPerformed
+
+    private void caixaProfessores3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaProfessores3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_caixaProfessores3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -302,11 +368,14 @@ public class Disciplina extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Assunto;
+    private javax.swing.JLabel CargaHorária;
     private javax.swing.JLabel CodigoDaDisciplina;
     private javax.swing.JMenu Disciplina;
     private javax.swing.JLabel Fundo;
+    private javax.swing.JLabel Horas;
     private javax.swing.JLabel Nome;
     private javax.swing.JMenu Professor;
+    private javax.swing.JLabel Professores;
     private javax.swing.JMenu Prova;
     private javax.swing.JMenu Questão;
     private javax.swing.JMenu Sair;
@@ -318,15 +387,19 @@ public class Disciplina extends javax.swing.JFrame {
     private javax.swing.JButton botaoExcluir;
     private javax.swing.JButton botaoLimpar;
     private javax.swing.JButton botaoProcurar;
+    private javax.swing.JComboBox caixaProfessores1;
+    private javax.swing.JComboBox caixaProfessores2;
+    private javax.swing.JComboBox caixaProfessores3;
     private javax.swing.JComboBox caixaÁrea;
+    private javax.swing.JTextField campoCargaHorária;
     private javax.swing.JTextField campoCodigoProfessor;
     private javax.swing.JTextField campoNome;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel Área;
     // End of variables declaration//GEN-END:variables
 }

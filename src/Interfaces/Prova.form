@@ -26,17 +26,11 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Professor"/>
           </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ProfessorMouseClicked"/>
-          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Assunto">
           <Properties>
             <Property name="text" type="java.lang.String" value="Assunto"/>
           </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AssuntoMouseClicked"/>
-          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Disciplina">
           <Properties>
@@ -47,17 +41,11 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Quest&#xe3;o"/>
           </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Quest&#xe3;oMouseClicked"/>
-          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Prova">
           <Properties>
             <Property name="text" type="java.lang.String" value="Prova"/>
           </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ProvaMouseClicked"/>
-          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Sobre">
           <Properties>
@@ -136,16 +124,16 @@
             <Property name="useNullLayout" type="boolean" value="true"/>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="CodigoDaDisciplina">
+            <Component class="javax.swing.JLabel" name="CodigoDoAssunto">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="C&#xf3;digo do disciplina"/>
+                <Property name="text" type="java.lang.String" value="C&#xf3;digo do assunto"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="20" width="110" height="-1"/>
+                  <AbsoluteConstraints x="20" y="20" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -189,27 +177,40 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JComboBox" name="caixa&#xc1;rea">
+            <Component class="javax.swing.JComboBox" name="caixaDisciplina">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="8">
-                    <StringItem index="0" value="Ci&#xea;ncias da Natureza"/>
-                    <StringItem index="1" value="Ci&#xea;ncias Humanas"/>
-                    <StringItem index="2" value="Curso de Agroneg&#xf3;cio"/>
-                    <StringItem index="3" value="Curso de Eletrot&#xe9;cnica"/>
-                    <StringItem index="4" value="Curso de Enfermagem"/>
-                    <StringItem index="5" value="Curso de Inform&#xe1;tica"/>
-                    <StringItem index="6" value="Linguagens e C&#xf3;digos"/>
-                    <StringItem index="7" value="Matem&#xe1;tica"/>
+                  <StringArray count="21">
+                    <StringItem index="0" value="Matem&#xe1;tica"/>
+                    <StringItem index="1" value="Qu&#xed;mica"/>
+                    <StringItem index="2" value="F&#xed;sica"/>
+                    <StringItem index="3" value="Biologia"/>
+                    <StringItem index="4" value="Hist&#xf3;ria"/>
+                    <StringItem index="5" value="Geografia"/>
+                    <StringItem index="6" value="Sociologia"/>
+                    <StringItem index="7" value="Filosofia"/>
+                    <StringItem index="8" value="Portugu&#xea;s"/>
+                    <StringItem index="9" value="Espanhol"/>
+                    <StringItem index="10" value="Ingl&#xea;s"/>
+                    <StringItem index="11" value="Educa&#xe7;&#xe3;o F&#xed;sica"/>
+                    <StringItem index="12" value="Inform&#xe1;tica B&#xe1;sica"/>
+                    <StringItem index="13" value="L&#xf3;gica de Programa&#xe7;&#xe3;o"/>
+                    <StringItem index="14" value="HTML/CSS"/>
+                    <StringItem index="15" value="PHP/MySQL"/>
+                    <StringItem index="16" value="Banco de Dados"/>
+                    <StringItem index="17" value="POO/Java"/>
+                    <StringItem index="18" value="Laborat&#xf3;rio Hardware"/>
+                    <StringItem index="19" value="Laborat&#xf3;rio Software"/>
+                    <StringItem index="20" value="Laborat&#xf3;rio Web"/>
                   </StringArray>
                 </Property>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="140" y="210" width="161" height="30"/>
+                  <AbsoluteConstraints x="140" y="90" width="161" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -225,7 +226,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="220" y="290" width="90" height="30"/>
+                  <AbsoluteConstraints x="220" y="210" width="90" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -241,7 +242,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="220" y="330" width="90" height="30"/>
+                  <AbsoluteConstraints x="220" y="250" width="90" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -257,7 +258,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="120" y="330" width="90" height="30"/>
+                  <AbsoluteConstraints x="120" y="250" width="90" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -270,7 +271,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="120" y="290" width="90" height="30"/>
+                  <AbsoluteConstraints x="120" y="210" width="90" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -283,7 +284,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="290" width="90" height="30"/>
+                  <AbsoluteConstraints x="20" y="210" width="90" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -296,206 +297,93 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="330" width="90" height="30"/>
+                  <AbsoluteConstraints x="20" y="250" width="90" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="&#xc1;rea">
+            <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&#xc1;rea"/>
+                <Property name="text" type="java.lang.String" value="Disciplina"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="220" width="-1" height="20"/>
+                  <AbsoluteConstraints x="20" y="100" width="-1" height="20"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="CargaHor&#xe1;ria">
+            <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Carga Hor&#xe1;ria"/>
+                <Property name="text" type="java.lang.String" value="Grau de ensino"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="260" width="80" height="-1"/>
+                  <AbsoluteConstraints x="20" y="140" width="90" height="20"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="campoCargaHor&#xe1;ria">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="140" y="250" width="50" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="javax.swing.JLabel" name="Horas">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="horas de aula"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="200" y="260" width="80" height="-1"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="javax.swing.JLabel" name="Professores">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Professor(es):"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="100" width="80" height="-1"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="caixaProfessores1">
+            <Component class="javax.swing.JComboBox" name="caixaGrauDeEnsino">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="28">
-                    <StringItem index="0" value="Nenhum"/>
-                    <StringItem index="1" value="Amanda Albuquerque"/>
-                    <StringItem index="2" value="Antonio Cosmo"/>
-                    <StringItem index="3" value="Arlindo Ara&#xfa;jo"/>
-                    <StringItem index="4" value="Carlos Henrique"/>
-                    <StringItem index="5" value="Cl&#xe1;udio Matias"/>
-                    <StringItem index="6" value="Daniel Frutuoso"/>
-                    <StringItem index="7" value="Ednajar"/>
-                    <StringItem index="8" value="Elder"/>
-                    <StringItem index="9" value="Elieuza Rodrigues"/>
-                    <StringItem index="10" value="Emanuel Magalh&#xe3;es"/>
-                    <StringItem index="11" value="Emerson Teles"/>
-                    <StringItem index="12" value="&#xc9;rica Nenes"/>
-                    <StringItem index="13" value="Felipe Alves"/>
-                    <StringItem index="14" value="Joaril&#xfa;cio"/>
-                    <StringItem index="15" value="Leandro Paz"/>
-                    <StringItem index="16" value="Leidiane Vale"/>
-                    <StringItem index="17" value="N&#xe1;bia Ara&#xfa;jo"/>
-                    <StringItem index="18" value="Ozen&#xe1;rio Abrantes"/>
-                    <StringItem index="19" value="Paulo Filho"/>
-                    <StringItem index="20" value="Paulo George"/>
-                    <StringItem index="21" value="Rafael Saraiva"/>
-                    <StringItem index="22" value="Ramon"/>
-                    <StringItem index="23" value="Roniele Rodrigues"/>
-                    <StringItem index="24" value="Sayonara Mineiro"/>
-                    <StringItem index="25" value="Suely Abrantes"/>
-                    <StringItem index="26" value="Vanessa Souza"/>
-                    <StringItem index="27" value="Talita"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Ensino Fundamental"/>
+                    <StringItem index="1" value="Ensino M&#xe9;dio"/>
+                    <StringItem index="2" value="Ensino Superior"/>
                   </StringArray>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caixaProfessores1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caixaGrauDeEnsinoActionPerformed"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="140" y="170" width="160" height="30"/>
+                  <AbsoluteConstraints x="140" y="130" width="161" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JComboBox" name="caixaProfessores2">
+            <Component class="javax.swing.JLabel" name="ProfessorExame">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Respons&#xe1;vel"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="20" y="180" width="110" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="caixaProfessorExame">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="27">
-                    <StringItem index="0" value="Amanda Albuquerque"/>
-                    <StringItem index="1" value="Antonio Cosmo"/>
-                    <StringItem index="2" value="Arlindo Ara&#xfa;jo"/>
-                    <StringItem index="3" value="Carlos Henrique"/>
-                    <StringItem index="4" value="Cl&#xe1;udio Matias"/>
-                    <StringItem index="5" value="Daniel Frutuoso"/>
-                    <StringItem index="6" value="Ednajar"/>
-                    <StringItem index="7" value="Elder"/>
-                    <StringItem index="8" value="Elieuza Rodrigues"/>
-                    <StringItem index="9" value="Emanuel Magalh&#xe3;es"/>
-                    <StringItem index="10" value="Emerson Teles"/>
-                    <StringItem index="11" value="&#xc9;rica Nenes"/>
-                    <StringItem index="12" value="Felipe Alves"/>
-                    <StringItem index="13" value="Joaril&#xfa;cio"/>
-                    <StringItem index="14" value="Leandro Paz"/>
-                    <StringItem index="15" value="Leidiane Vale"/>
-                    <StringItem index="16" value="N&#xe1;bia Ara&#xfa;jo"/>
-                    <StringItem index="17" value="Ozen&#xe1;rio Abrantes"/>
-                    <StringItem index="18" value="Paulo Filho"/>
-                    <StringItem index="19" value="Paulo George"/>
-                    <StringItem index="20" value="Rafael Saraiva"/>
-                    <StringItem index="21" value="Ramon"/>
-                    <StringItem index="22" value="Roniele Rodrigues"/>
-                    <StringItem index="23" value="Sayonara Mineiro"/>
-                    <StringItem index="24" value="Suely Abrantes"/>
-                    <StringItem index="25" value="Vanessa Souza"/>
-                    <StringItem index="26" value="Talita"/>
+                  <StringArray count="2">
+                    <StringItem index="0" value="Professor"/>
+                    <StringItem index="1" value="Exame"/>
                   </StringArray>
                 </Property>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caixaProfessores2ActionPerformed"/>
-              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="140" y="90" width="160" height="30"/>
+                  <AbsoluteConstraints x="140" y="170" width="90" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JComboBox" name="caixaProfessores3">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="12" style="0"/>
-                </Property>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="28">
-                    <StringItem index="0" value="Nenhum"/>
-                    <StringItem index="1" value="Amanda Albuquerque"/>
-                    <StringItem index="2" value="Antonio Cosmo"/>
-                    <StringItem index="3" value="Arlindo Ara&#xfa;jo"/>
-                    <StringItem index="4" value="Carlos Henrique"/>
-                    <StringItem index="5" value="Cl&#xe1;udio Matias"/>
-                    <StringItem index="6" value="Daniel Frutuoso"/>
-                    <StringItem index="7" value="Ednajar"/>
-                    <StringItem index="8" value="Elder"/>
-                    <StringItem index="9" value="Elieuza Rodrigues"/>
-                    <StringItem index="10" value="Emanuel Magalh&#xe3;es"/>
-                    <StringItem index="11" value="Emerson Teles"/>
-                    <StringItem index="12" value="&#xc9;rica Nenes"/>
-                    <StringItem index="13" value="Felipe Alves"/>
-                    <StringItem index="14" value="Joaril&#xfa;cio"/>
-                    <StringItem index="15" value="Leandro Paz"/>
-                    <StringItem index="16" value="Leidiane Vale"/>
-                    <StringItem index="17" value="N&#xe1;bia Ara&#xfa;jo"/>
-                    <StringItem index="18" value="Ozen&#xe1;rio Abrantes"/>
-                    <StringItem index="19" value="Paulo Filho"/>
-                    <StringItem index="20" value="Paulo George"/>
-                    <StringItem index="21" value="Rafael Saraiva"/>
-                    <StringItem index="22" value="Ramon"/>
-                    <StringItem index="23" value="Roniele Rodrigues"/>
-                    <StringItem index="24" value="Sayonara Mineiro"/>
-                    <StringItem index="25" value="Suely Abrantes"/>
-                    <StringItem index="26" value="Vanessa Souza"/>
-                    <StringItem index="27" value="Talita"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caixaProfessores3ActionPerformed"/>
-              </Events>
+            <Component class="javax.swing.JTextField" name="campoProfessorExame">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="140" y="130" width="160" height="30"/>
+                  <AbsoluteConstraints x="240" y="170" width="80" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -507,7 +395,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="-410" y="0" width="1340" height="460"/>
+                  <AbsoluteConstraints x="-420" y="0" width="1340" height="460"/>
                 </Constraint>
               </Constraints>
             </Component>
