@@ -5,7 +5,6 @@
  */
 package Interfaces;
 
-import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -135,12 +134,12 @@ public class Professor extends javax.swing.JFrame {
         Contato.setBounds(330, 300, 50, 15);
 
         caixaDisciplina1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaDisciplina1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        caixaDisciplina1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Redação", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
         jPanel2.add(caixaDisciplina1);
         caixaDisciplina1.setBounds(450, 210, 161, 30);
 
         caixaDisciplina2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaDisciplina2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhuma", "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        caixaDisciplina2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhuma", "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Redação", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
         jPanel2.add(caixaDisciplina2);
         caixaDisciplina2.setBounds(450, 250, 161, 30);
 
@@ -325,6 +324,7 @@ public class Professor extends javax.swing.JFrame {
         campoSenha.setText("");
         campoContato.setText("");
         campoEmail.setText("");
+        textoExperiencias.setText("");
     }//GEN-LAST:event_botaoLimparActionPerformed
 
     private void botaoCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCancelarActionPerformed

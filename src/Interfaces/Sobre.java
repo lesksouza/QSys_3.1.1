@@ -5,7 +5,6 @@
  */
 package Interfaces;
 
-import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -314,9 +313,7 @@ public class Sobre extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem17ActionPerformed
 
     private void cadastrarProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarProfessorActionPerformed
-        CadastroProfessor cadprof = new CadastroProfessor();
-        cadprof.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_cadastrarProfessorActionPerformed
 
     private void SairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SairMouseClicked

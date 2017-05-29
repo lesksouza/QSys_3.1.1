@@ -5,7 +5,6 @@
  */
 package Interfaces;
 
-import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -69,7 +68,7 @@ public class Assunto extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Professor");
+        setTitle("Assunto");
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(460, 339));
@@ -196,6 +195,11 @@ public class Assunto extends javax.swing.JFrame {
         jMenuBar2.add(Assunto);
 
         Disciplina.setText("Disciplina");
+        Disciplina.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DisciplinaMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Disciplina);
 
         Questão.setText("Questão");
@@ -215,9 +219,19 @@ public class Assunto extends javax.swing.JFrame {
         jMenuBar2.add(Prova);
 
         Sobre.setText("Sobre");
+        Sobre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SobreMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Sobre);
 
         Sair.setText("Sair");
+        Sair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SairMouseClicked(evt);
+            }
+        });
         jMenuBar2.add(Sair);
 
         setJMenuBar(jMenuBar2);
@@ -226,7 +240,9 @@ public class Assunto extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 854, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 859, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,9 +267,7 @@ public class Assunto extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoExcluirActionPerformed
 
     private void AssuntoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssuntoMouseClicked
-        Prova assunto = new Prova();
-        assunto.setVisible(true);
-        dispose();
+        JOptionPane.showMessageDialog(null, "Você já está nessa tela.");
     }//GEN-LAST:event_AssuntoMouseClicked
 
     private void ProfessorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProfessorMouseClicked
@@ -273,6 +287,22 @@ public class Assunto extends javax.swing.JFrame {
         prova.setVisible(true);
         dispose();
     }//GEN-LAST:event_ProvaMouseClicked
+
+    private void SobreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SobreMouseClicked
+        Sobre sobre = new Sobre();
+        sobre.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_SobreMouseClicked
+
+    private void SairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SairMouseClicked
+        dispose();
+    }//GEN-LAST:event_SairMouseClicked
+
+    private void DisciplinaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DisciplinaMouseClicked
+        Disciplina disciplina = new Disciplina();
+        disciplina.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_DisciplinaMouseClicked
 
     /**
      * @param args the command line arguments

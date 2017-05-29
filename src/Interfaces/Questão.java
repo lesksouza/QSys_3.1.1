@@ -5,7 +5,6 @@
  */
 package Interfaces;
 
-import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -35,8 +34,8 @@ public class Questão extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        CodigoDoAssunto = new javax.swing.JLabel();
-        campoCodigoProfessor = new javax.swing.JTextField();
+        CodigoDaQuestao = new javax.swing.JLabel();
+        campoCodigoQuestao = new javax.swing.JTextField();
         botaoProcurar = new javax.swing.JButton();
         campoNome = new javax.swing.JTextField();
         Nome = new javax.swing.JLabel();
@@ -76,12 +75,12 @@ public class Questão extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        CodigoDoAssunto.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        CodigoDoAssunto.setText("Código do assunto");
-        jPanel2.add(CodigoDoAssunto);
-        CodigoDoAssunto.setBounds(20, 20, 101, 15);
-        jPanel2.add(campoCodigoProfessor);
-        campoCodigoProfessor.setBounds(140, 10, 60, 30);
+        CodigoDaQuestao.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CodigoDaQuestao.setText("Código da questão");
+        jPanel2.add(CodigoDaQuestao);
+        CodigoDaQuestao.setBounds(20, 20, 110, 15);
+        jPanel2.add(campoCodigoQuestao);
+        campoCodigoQuestao.setBounds(140, 10, 60, 30);
 
         botaoProcurar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoProcurar.setText("Procurar");
@@ -211,7 +210,7 @@ public class Questão extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
-        campoCodigoProfessor.setText("");
+        campoCodigoQuestao.setText("");
         campoNome.setText("");
     }//GEN-LAST:event_botaoLimparActionPerformed
 
@@ -295,7 +294,7 @@ public class Questão extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Assunto;
-    private javax.swing.JLabel CodigoDoAssunto;
+    private javax.swing.JLabel CodigoDaQuestao;
     private javax.swing.JMenu Disciplina;
     private javax.swing.JLabel Fundo;
     private javax.swing.JLabel Nome;
@@ -313,7 +312,7 @@ public class Questão extends javax.swing.JFrame {
     private javax.swing.JButton botaoProcurar;
     private javax.swing.JComboBox caixaDisciplina;
     private javax.swing.JComboBox caixaGrauDeEnsino;
-    private javax.swing.JTextField campoCodigoProfessor;
+    private javax.swing.JTextField campoCodigoQuestao;
     private javax.swing.JTextField campoNome;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

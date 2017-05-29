@@ -5,7 +5,6 @@
  */
 package Interfaces;
 
-import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,8 +37,8 @@ public class Disciplina extends javax.swing.JFrame {
         CodigoDaDisciplina = new javax.swing.JLabel();
         campoCodigoProfessor = new javax.swing.JTextField();
         botaoProcurar = new javax.swing.JButton();
-        campoNome = new javax.swing.JTextField();
         Nome = new javax.swing.JLabel();
+        caixaDisciplina = new javax.swing.JComboBox();
         caixaÁrea = new javax.swing.JComboBox();
         botaoLimpar = new javax.swing.JButton();
         botaoCancelar = new javax.swing.JButton();
@@ -52,9 +51,15 @@ public class Disciplina extends javax.swing.JFrame {
         campoCargaHorária = new javax.swing.JTextField();
         Horas = new javax.swing.JLabel();
         Professores = new javax.swing.JLabel();
-        caixaProfessores1 = new javax.swing.JComboBox();
-        caixaProfessores2 = new javax.swing.JComboBox();
-        caixaProfessores3 = new javax.swing.JComboBox();
+        campoProfessor1 = new javax.swing.JTextField();
+        no1 = new javax.swing.JLabel();
+        caixaAno1 = new javax.swing.JComboBox();
+        campoProfessor2 = new javax.swing.JTextField();
+        no2 = new javax.swing.JLabel();
+        caixaAno2 = new javax.swing.JComboBox();
+        campoProfessor3 = new javax.swing.JTextField();
+        no3 = new javax.swing.JLabel();
+        caixaAno3 = new javax.swing.JComboBox();
         Fundo = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         Professor = new javax.swing.JMenu();
@@ -92,13 +97,21 @@ public class Disciplina extends javax.swing.JFrame {
         botaoProcurar.setText("Procurar");
         jPanel2.add(botaoProcurar);
         botaoProcurar.setBounds(210, 10, 90, 30);
-        jPanel2.add(campoNome);
-        campoNome.setBounds(140, 50, 161, 30);
 
         Nome.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Nome.setText("Nome");
         jPanel2.add(Nome);
         Nome.setBounds(20, 60, 32, 15);
+
+        caixaDisciplina.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaDisciplina.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Redação", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        caixaDisciplina.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caixaDisciplinaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(caixaDisciplina);
+        caixaDisciplina.setBounds(140, 50, 161, 30);
 
         caixaÁrea.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         caixaÁrea.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ciências da Natureza", "Ciências Humanas", "Curso de Agronegócio", "Curso de Eletrotécnica", "Curso de Enfermagem", "Curso de Informática", "Linguagens e Códigos", "Matemática" }));
@@ -172,35 +185,52 @@ public class Disciplina extends javax.swing.JFrame {
         jPanel2.add(Professores);
         Professores.setBounds(20, 100, 80, 15);
 
-        caixaProfessores1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaProfessores1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhum", "Amanda Albuquerque", "Antonio Cosmo", "Arlindo Araújo", "Carlos Henrique", "Cláudio Matias", "Daniel Frutuoso", "Ednajar", "Elder", "Elieuza Rodrigues", "Emanuel Magalhães", "Emerson Teles", "Érica Nenes", "Felipe Alves", "Joarilúcio", "Leandro Paz", "Leidiane Vale", "Nábia Araújo", "Ozenário Abrantes", "Paulo Filho", "Paulo George", "Rafael Saraiva", "Ramon", "Roniele Rodrigues", "Sayonara Mineiro", "Suely Abrantes", "Vanessa Souza", "Talita" }));
-        caixaProfessores1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                caixaProfessores1ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(caixaProfessores1);
-        caixaProfessores1.setBounds(140, 170, 160, 30);
+        campoProfessor1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jPanel2.add(campoProfessor1);
+        campoProfessor1.setBounds(140, 90, 160, 30);
 
-        caixaProfessores2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaProfessores2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Amanda Albuquerque", "Antonio Cosmo", "Arlindo Araújo", "Carlos Henrique", "Cláudio Matias", "Daniel Frutuoso", "Ednajar", "Elder", "Elieuza Rodrigues", "Emanuel Magalhães", "Emerson Teles", "Érica Nenes", "Felipe Alves", "Joarilúcio", "Leandro Paz", "Leidiane Vale", "Nábia Araújo", "Ozenário Abrantes", "Paulo Filho", "Paulo George", "Rafael Saraiva", "Ramon", "Roniele Rodrigues", "Sayonara Mineiro", "Suely Abrantes", "Vanessa Souza", "Talita" }));
-        caixaProfessores2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                caixaProfessores2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(caixaProfessores2);
-        caixaProfessores2.setBounds(140, 90, 160, 30);
+        no1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        no1.setText("no");
+        jPanel2.add(no1);
+        no1.setBounds(310, 100, 14, 15);
 
-        caixaProfessores3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaProfessores3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nenhum", "Amanda Albuquerque", "Antonio Cosmo", "Arlindo Araújo", "Carlos Henrique", "Cláudio Matias", "Daniel Frutuoso", "Ednajar", "Elder", "Elieuza Rodrigues", "Emanuel Magalhães", "Emerson Teles", "Érica Nenes", "Felipe Alves", "Joarilúcio", "Leandro Paz", "Leidiane Vale", "Nábia Araújo", "Ozenário Abrantes", "Paulo Filho", "Paulo George", "Rafael Saraiva", "Ramon", "Roniele Rodrigues", "Sayonara Mineiro", "Suely Abrantes", "Vanessa Souza", "Talita" }));
-        caixaProfessores3.addActionListener(new java.awt.event.ActionListener() {
+        caixaAno1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaAno1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1º Ano", "2º Ano", "3º Ano", "1º e 2º Ano", "1º e 3º Ano", "2º e 3º Ano", "1º, 2º e 3º Ano" }));
+        caixaAno1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                caixaProfessores3ActionPerformed(evt);
+                caixaAno1ActionPerformed(evt);
             }
         });
-        jPanel2.add(caixaProfessores3);
-        caixaProfessores3.setBounds(140, 130, 160, 30);
+        jPanel2.add(caixaAno1);
+        caixaAno1.setBounds(330, 90, 130, 30);
+
+        campoProfessor2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jPanel2.add(campoProfessor2);
+        campoProfessor2.setBounds(140, 130, 160, 30);
+
+        no2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        no2.setText("no");
+        jPanel2.add(no2);
+        no2.setBounds(310, 140, 14, 15);
+
+        caixaAno2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaAno2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1º Ano", "2º Ano", "3º Ano", "1º e 2º Ano", "1º e 3º Ano", "2º e 3º Ano", "1º, 2º e 3º Ano" }));
+        jPanel2.add(caixaAno2);
+        caixaAno2.setBounds(330, 130, 130, 30);
+
+        campoProfessor3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jPanel2.add(campoProfessor3);
+        campoProfessor3.setBounds(140, 170, 160, 30);
+
+        no3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        no3.setText("no");
+        jPanel2.add(no3);
+        no3.setBounds(310, 180, 14, 15);
+
+        caixaAno3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        caixaAno3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1º Ano", "2º Ano", "3º Ano", "1º e 2º Ano", "1º e 3º Ano", "2º e 3º Ano", "1º, 2º e 3º Ano" }));
+        jPanel2.add(caixaAno3);
+        caixaAno3.setBounds(330, 170, 130, 30);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
         jPanel2.add(Fundo);
@@ -269,7 +299,10 @@ public class Disciplina extends javax.swing.JFrame {
 
     private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
         campoCodigoProfessor.setText("");
-        campoNome.setText("");
+        campoCargaHorária.setText("");
+        campoProfessor1.setText("");
+        campoProfessor2.setText("");
+        campoProfessor3.setText("");
     }//GEN-LAST:event_botaoLimparActionPerformed
 
     private void botaoCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCancelarActionPerformed
@@ -304,17 +337,13 @@ public class Disciplina extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_ProvaMouseClicked
 
-    private void caixaProfessores1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaProfessores1ActionPerformed
+    private void caixaAno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaAno1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_caixaProfessores1ActionPerformed
+    }//GEN-LAST:event_caixaAno1ActionPerformed
 
-    private void caixaProfessores2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaProfessores2ActionPerformed
+    private void caixaDisciplinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaDisciplinaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_caixaProfessores2ActionPerformed
-
-    private void caixaProfessores3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaProfessores3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_caixaProfessores3ActionPerformed
+    }//GEN-LAST:event_caixaDisciplinaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -387,19 +416,25 @@ public class Disciplina extends javax.swing.JFrame {
     private javax.swing.JButton botaoExcluir;
     private javax.swing.JButton botaoLimpar;
     private javax.swing.JButton botaoProcurar;
-    private javax.swing.JComboBox caixaProfessores1;
-    private javax.swing.JComboBox caixaProfessores2;
-    private javax.swing.JComboBox caixaProfessores3;
+    private javax.swing.JComboBox caixaAno1;
+    private javax.swing.JComboBox caixaAno2;
+    private javax.swing.JComboBox caixaAno3;
+    private javax.swing.JComboBox caixaDisciplina;
     private javax.swing.JComboBox caixaÁrea;
     private javax.swing.JTextField campoCargaHorária;
     private javax.swing.JTextField campoCodigoProfessor;
-    private javax.swing.JTextField campoNome;
+    private javax.swing.JTextField campoProfessor1;
+    private javax.swing.JTextField campoProfessor2;
+    private javax.swing.JTextField campoProfessor3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel no1;
+    private javax.swing.JLabel no2;
+    private javax.swing.JLabel no3;
     private javax.swing.JLabel Área;
     // End of variables declaration//GEN-END:variables
 }

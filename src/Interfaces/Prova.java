@@ -5,7 +5,6 @@
  */
 package Interfaces;
 
-import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -35,8 +34,8 @@ public class Prova extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        CodigoDoAssunto = new javax.swing.JLabel();
-        campoCodigoProfessor = new javax.swing.JTextField();
+        CodigoDaProva = new javax.swing.JLabel();
+        campoCodigoProva = new javax.swing.JTextField();
         botaoProcurar = new javax.swing.JButton();
         campoNome = new javax.swing.JTextField();
         Nome = new javax.swing.JLabel();
@@ -51,8 +50,7 @@ public class Prova extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         caixaGrauDeEnsino = new javax.swing.JComboBox();
         ProfessorExame = new javax.swing.JLabel();
-        caixaProfessorExame = new javax.swing.JComboBox();
-        campoProfessorExame = new javax.swing.JTextField();
+        campoResponsável = new javax.swing.JTextField();
         Fundo = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         Professor = new javax.swing.JMenu();
@@ -79,12 +77,12 @@ public class Prova extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        CodigoDoAssunto.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        CodigoDoAssunto.setText("Código do assunto");
-        jPanel2.add(CodigoDoAssunto);
-        CodigoDoAssunto.setBounds(20, 20, 101, 15);
-        jPanel2.add(campoCodigoProfessor);
-        campoCodigoProfessor.setBounds(140, 10, 60, 30);
+        CodigoDaProva.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        CodigoDaProva.setText("Código da prova");
+        jPanel2.add(CodigoDaProva);
+        CodigoDaProva.setBounds(20, 20, 88, 15);
+        jPanel2.add(campoCodigoProva);
+        campoCodigoProva.setBounds(140, 10, 60, 30);
 
         botaoProcurar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         botaoProcurar.setText("Procurar");
@@ -99,7 +97,7 @@ public class Prova extends javax.swing.JFrame {
         Nome.setBounds(20, 60, 32, 15);
 
         caixaDisciplina.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaDisciplina.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
+        caixaDisciplina.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Matemática", "Química", "Física", "Biologia", "História", "Geografia", "Sociologia", "Filosofia", "Português", "Redação", "Espanhol", "Inglês", "Educação Física", "Informática Básica", "Lógica de Programação", "HTML/CSS", "PHP/MySQL", "Banco de Dados", "POO/Java", "Laboratório Hardware", "Laboratório Software", "Laboratório Web" }));
         jPanel2.add(caixaDisciplina);
         caixaDisciplina.setBounds(140, 90, 161, 30);
 
@@ -173,12 +171,13 @@ public class Prova extends javax.swing.JFrame {
         jPanel2.add(ProfessorExame);
         ProfessorExame.setBounds(20, 180, 110, 15);
 
-        caixaProfessorExame.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        caixaProfessorExame.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Professor", "Exame" }));
-        jPanel2.add(caixaProfessorExame);
-        caixaProfessorExame.setBounds(140, 170, 90, 30);
-        jPanel2.add(campoProfessorExame);
-        campoProfessorExame.setBounds(240, 170, 80, 30);
+        campoResponsável.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoResponsávelActionPerformed(evt);
+            }
+        });
+        jPanel2.add(campoResponsável);
+        campoResponsável.setBounds(140, 170, 160, 30);
 
         Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/fundo.jpg"))); // NOI18N
         jPanel2.add(Fundo);
@@ -226,8 +225,9 @@ public class Prova extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
-        campoCodigoProfessor.setText("");
+        campoCodigoProva.setText("");
         campoNome.setText("");
+        campoResponsável.setText("");
     }//GEN-LAST:event_botaoLimparActionPerformed
 
     private void botaoCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCancelarActionPerformed
@@ -241,6 +241,10 @@ public class Prova extends javax.swing.JFrame {
     private void caixaGrauDeEnsinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caixaGrauDeEnsinoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_caixaGrauDeEnsinoActionPerformed
+
+    private void campoResponsávelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoResponsávelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoResponsávelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,7 +314,7 @@ public class Prova extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Assunto;
-    private javax.swing.JLabel CodigoDoAssunto;
+    private javax.swing.JLabel CodigoDaProva;
     private javax.swing.JMenu Disciplina;
     private javax.swing.JLabel Fundo;
     private javax.swing.JLabel Nome;
@@ -329,10 +333,9 @@ public class Prova extends javax.swing.JFrame {
     private javax.swing.JButton botaoProcurar;
     private javax.swing.JComboBox caixaDisciplina;
     private javax.swing.JComboBox caixaGrauDeEnsino;
-    private javax.swing.JComboBox caixaProfessorExame;
-    private javax.swing.JTextField campoCodigoProfessor;
+    private javax.swing.JTextField campoCodigoProva;
     private javax.swing.JTextField campoNome;
-    private javax.swing.JTextField campoProfessorExame;
+    private javax.swing.JTextField campoResponsável;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;

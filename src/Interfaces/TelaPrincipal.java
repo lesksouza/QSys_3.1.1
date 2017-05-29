@@ -5,7 +5,6 @@
  */
 package Interfaces;
 
-import Visao.Cadastrar.CadastroProfessor;
 import javax.swing.JOptionPane;
 
 /**
@@ -37,7 +36,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         Titulo = new javax.swing.JLabel();
         Subtitulo = new javax.swing.JLabel();
         letrinhasMiudas = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         Professor = new javax.swing.JMenu();
         Assunto = new javax.swing.JMenu();
@@ -76,11 +75,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         letrinhasMiudas.setForeground(new java.awt.Color(255, 255, 255));
         letrinhasMiudas.setText("Desenvolvido nas aulas de Cláudio Matias.");
         jPanel1.add(letrinhasMiudas);
-        letrinhasMiudas.setBounds(650, 430, 190, 14);
+        letrinhasMiudas.setBounds(30, 100, 190, 14);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/telaPrincipalFundo.jpg"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(4, 0, 850, 460);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Blue.jpg"))); // NOI18N
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 900, 460);
 
         Professor.setText("Professor");
         Professor.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -242,7 +241,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu Sobre;
     private javax.swing.JLabel Subtitulo;
     private javax.swing.JLabel Titulo;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

@@ -10,41 +10,79 @@ package Modelo;
  * @author pc
  */
 public class Assunto {
-    private String nome;
-    private int codigo;
-    private String disciplina;
-    private String grau_de_ensino;
+    private String campoNome;
+    private int campoCodigoAssunto;
+    private String caixaDisciplina;
+    private String caixaÁrea;
+    private String caixaGrauDeEducacao;
 
-    public String getNome() {
-        return nome;
+    /**
+     * @return the campoNome
+     */
+    public String getCampoNome() {
+        return campoNome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    /**
+     * @param campoNome the campoNome to set
+     */
+    public void setCampoNome(String campoNome) {
+        this.campoNome = campoNome;
     }
 
-    public int getCodigo() {
-        return codigo;
+    /**
+     * @return the campoCodigoAssunto
+     */
+    public int getCampoCodigoAssunto() {
+        return campoCodigoAssunto;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    /**
+     * @param campoCodigoAssunto the campoCodigoAssunto to set
+     */
+    public void setCampoCodigoAssunto(int campoCodigoAssunto) {
+        this.campoCodigoAssunto = campoCodigoAssunto;
     }
 
-    public String getDisciplina() {
-        return disciplina;
+    /**
+     * @return the caixaDisciplina
+     */
+    public String getCaixaDisciplina() {
+        return caixaDisciplina;
     }
 
-    public void setDisciplina(String disciplina) {
-        this.disciplina = disciplina;
+    /**
+     * @param caixaDisciplina the caixaDisciplina to set
+     */
+    public void setCaixaDisciplina(String caixaDisciplina) {
+        this.caixaDisciplina = caixaDisciplina;
     }
 
-    public String getGrau_de_ensino() {
-        return grau_de_ensino;
+    /**
+     * @return the caixaÁrea
+     */
+    public String getCaixaÁrea() {
+        return caixaÁrea;
     }
 
-    public void setGrau_de_ensino(String grau_de_ensino) {
-        this.grau_de_ensino = grau_de_ensino;
+    /**
+     * @param caixaÁrea the caixaÁrea to set
+     */
+    public void setCaixaÁrea(String caixaÁrea) {
+        this.caixaÁrea = caixaÁrea;
     }
-    
+
+    /**
+     * @return the caixaGrauDeEducacao
+     */
+    public String getCaixaGrauDeEducacao() {
+        return caixaGrauDeEducacao;
+    }
+
+    /**
+     * @param caixaGrauDeEducacao the caixaGrauDeEducacao to set
+     */
+    public void setCaixaGrauDeEducacao(String caixaGrauDeEducacao) {
+        this.caixaGrauDeEducacao = caixaGrauDeEducacao;
+    }
 }
